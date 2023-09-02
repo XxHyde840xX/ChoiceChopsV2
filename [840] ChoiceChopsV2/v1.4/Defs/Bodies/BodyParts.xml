@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>MLW_Horns</defName>
+        <label>horns</label>
+        <hitPoints>25</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+    </BodyPartDef>
+
+</Defs>

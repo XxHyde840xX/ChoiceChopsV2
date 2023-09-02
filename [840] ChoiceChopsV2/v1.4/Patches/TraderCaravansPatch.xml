@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/allowedPackAnimals</xpath>
+                <value>
+                    <li>MLW_Aurochs</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/allowedPackAnimals</xpath>
+                <value>
+                    <li>MLW_Aurochs</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name ="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+                <value>
+                    <MLW_Aurochs>6</MLW_Aurochs>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name ="TribeBase"]/pawnGroupMakers/li[kindDef="Trader"]/carriers</xpath>
+                <value>
+                    <MLW_Aurochs>6</MLW_Aurochs>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

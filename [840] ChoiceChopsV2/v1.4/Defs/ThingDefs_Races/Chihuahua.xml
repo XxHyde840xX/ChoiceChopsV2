@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the XML file for the Mogi dog. -->
+<Defs>
+  <ThoughtDef>
+    <defName>AnimalBehaviours_ComedicReliefThought</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>comedic relief</label>
+        <baseMoodEffect>2</baseMoodEffect>
+        <description>The colonist is amused by a chihuahua's quirky antics.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Chihuahua_EmotionalSupportThought</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>emotional support</label>
+        <baseMoodEffect>4</baseMoodEffect>
+        <description>The colonist feels better after confiding in a chihuahua.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Chihuahua</defName>
+    <label>chihuahua</label>
+    <description>A small, black and white chihuahua, inspired by Mogi.</description>
+    <statBases>
+      <MoveSpeed>4.0</MoveSpeed>
+      <MarketValue>650</MarketValue>
+    </statBases>
+    <tools>
+        <li>
+          <label>teeth</label>
+          <capacities>
+            <li>Bite</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.5</cooldownTime>
+          <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Scratch</def>
+                <amount>2</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+        </li>
+    </tools>
+    <verbs>
+    <!-- Ranged stun attack -->
+    <li>
+      <label>piercing bark attack</label>
+      <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      <verbClass>Verb_Shoot</verbClass>
+      <defaultProjectile>Bullet_MachinePistol</defaultProjectile>
+      <warmupTime>2.0</warmupTime>
+      <range>4</range>
+      <soundCast>Shot_Minigun</soundCast>
+      <muzzleFlashScale>1</muzzleFlashScale>
+    </li>
+    </verbs>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.25</baseBodySize>
+      <baseHungerRate>0.4</baseHungerRate>
+      <foodType>OmnivoreAnimal</foodType>
+      <lifeStageAges>
+    <li>
+      <def>AnimalBaby</def>
+      <minAge>0</minAge>
+    </li>
+    <li>
+      <def>AnimalJuvenile</def>
+      <minAge>3</minAge>
+    </li>
+    <li>
+      <def>AnimalAdult</def>
+      <minAge>6</minAge>
+      <soundWounded>Pawn_Dog_Injured</soundWounded>
+      <soundDeath>Pawn_Dog_Death</soundDeath>
+      <soundCall>Pawn_Dog_Call</soundCall>
+      <soundAngry>Pawn_Dog_Angry</soundAngry>
+    </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <wildness>0.1</wildness>
+      <trainability>Intermediate</trainability>
+      <intelligence>Animal</intelligence>
+      <petness>1.0</petness>
+      <packAnimal>false</packAnimal>
+      <nuzzleMtbHours>22.0</nuzzleMtbHours>
+      <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+    </race>
+    <comps>
+      <!-- Ability to dig in dirt for a variety of objects -->
+      <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+        <customThingToDig>
+          <li>Steel</li>
+          <li>Jade</li>
+          <li>ComponentIndustrial</li>
+          <li>Silver</li>
+          <li>Gold</li>
+        </customThingToDig>
+        <customAmountToDig>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </customAmountToDig>
+        <ticksToDig>75000</ticksToDig>
+        <onlyWhenTamed>true</onlyWhenTamed>
+        <spawnForbidden>false</spawnForbidden>
+      </li>
+      <!-- Ability to provide comedic relief to nearby colonists -->
+      <li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+        <radius>5</radius> <!-- The radius within which pawns are affected -->
+        <tickInterval>55000</tickInterval> <!-- The interval between thought applications -->
+        <thoughtDef>AnimalBehaviours_ComedicReliefThought</thoughtDef> <!-- The thought to apply to nearby pawns -->
+        <showEffect>false</showEffect> <!-- Whether or not to show an effect when the thought is applied -->
+        <needsToBeTamed>true</needsToBeTamed> <!-- Whether the animal needs to be tamed for this effect to occur -->
+        <conditionalOnWellBeing>false</conditionalOnWellBeing> <!-- Whether the effect only occurs if the animal is in good health -->
+      </li>
+      <!-- Healing Lick ability using CompPassiveRegenerator -->
+      <li Class="AnimalBehaviours.CompProperties_PassiveRegenerator">
+        <compClass>AnimalBehaviours.CompPassiveRegenerator</compClass>
+        <radius>3</radius> <!-- The radius within which pawns are affected -->
+        <tickInterval>85000</tickInterval> <!-- The interval between healing applications -->
+        <showEffect>true</showEffect> <!-- Whether or not to show an effect when healing is applied -->
+        <needsToBeTamed>true</needsToBeTamed> <!-- Whether the animal needs to be tamed for this effect to occur -->
+      </li>
+      <!-- Ability to provide emotional support -->
+      <li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+        <radius>3</radius> <!-- The radius within which pawns are affected -->
+        <tickInterval>65000</tickInterval> <!-- The interval between thought applications -->
+        <thoughtDef>Chihuahua_EmotionalSupportThought</thoughtDef> <!-- The thought to apply to nearby pawns -->
+        <showEffect>true</showEffect> <!-- Whether or not to show an effect when the thought is applied -->
+        <needsToBeTamed>true</needsToBeTamed> <!-- Whether the animal needs to be tamed for this effect to occur -->
+        <conditionalOnWellBeing>true</conditionalOnWellBeing> <!-- Whether the effect only occurs if the animal is in good health -->
+      </li>
+    </comps>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Chihuahua</defName>
+    <race>Chihuahua</race>
+    <label>chihuahua</label>
+    <combatPower>35</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mogi/Mogi_Baby</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mogi/Mogi_Juvenile</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Mogi/Mogi_Adult</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shadowData>
+            <volume>(0.0, 0.0, 0.0)</volume>
+            <offset>(0.0, 0.0, 0.0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <!-- MVCF mod definition -->
+  <MVCF.ModDef>
+    <defName>UnblestMATT.Chihuahua_MVCF_ModDef</defName> <!-- Replace with appropriate value -->
+    <label>Charming Chihuahuas MVCF</label> <!-- Replace with appropriate value -->
+    <description>Enabling MVCF features for Charming Chihuahuas</description>
+    <ActivateFeatures>
+      <li>RangedAnimals</li>
+      <li>IntegratedToggle</li>
+    </ActivateFeatures>
+  </MVCF.ModDef>
+</Defs>

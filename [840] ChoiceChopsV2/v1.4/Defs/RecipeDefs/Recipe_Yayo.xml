@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef>
+		<defName>produce_yayo</defName>
+		<label>produdce yayo x 2</label>
+		<description>Produce two yayo from a machnorian chicken egg shell. This wastes the delicious yolk.</description>
+		<jobString>Making some yolks.</jobString>
+		<workAmount>75</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>5</Cooking>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+		<products>
+			<Yayo>2</Yayo>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EggMachnorChickenUnfertilized</li>
+				<li>EggMachnorChickenFertilized</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>EggMachnorChickenUnfertilized</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+		<defName>produce_bulk_yayo</defName>
+		<label>produdce yayo x 9</label>
+		<description>Produce nine yayo from a four machnorian chicken egg shells. This wastes the delicious yolk.</description>
+		<jobString>Cracking a dozen eggs.</jobString>
+		<workAmount>300</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<skillRequirements>
+			<Cooking>5</Cooking>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Intellectual</workSkill>
+		<products>
+			<Yayo>9</Yayo>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EggMachnorChickenUnfertilized</li>
+				<li>EggMachnorChickenFertilized</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>EggMachnorChickenUnfertilized</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
+  </RecipeDef>
+  
+</Defs>

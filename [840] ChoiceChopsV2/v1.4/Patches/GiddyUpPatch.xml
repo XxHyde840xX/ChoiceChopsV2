@@ -23,13 +23,9 @@
         </value>
       </li>
 
-
 		</operations>
 		</match>
 	</Operation>
-
-
-
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -39,8 +35,6 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-
-
 
 				<li Class="PatchOperationAddModExtension">
 					<xpath>*/ThingDef[defName = "Coldwarg"]</xpath> 
@@ -60,6 +54,22 @@
 		</match>
 	</Operation>
 
+	<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Giddy-Up 2</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationAddModExtension">
+						<xpath>Defs/ThingDef[defName = MLW_Aurochs]</xpath>
+						<value>
+							<li Class="GiddyUp.NotMountable"/>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</Operation>
 
 </Patch>
 

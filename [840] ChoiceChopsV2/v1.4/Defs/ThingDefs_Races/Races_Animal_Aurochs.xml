@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>MLW_Aurochs</defName>
+        <label>aurochs</label>
+        <description>A wild ancestor to the domestic cow, brought back from extinction through a combination of cloning, selective breeding, and genetic manipulation, and identifiable by its large size, massive horns, and curly, blonde forehead hair.\n\nIn human culture, aurochs appear prominently, usually as symbols of strength and vitality. Aurochs hunts are widely represented throughout history, and downing an aurochs is seen in many cultures as a demonstration of strength and valour. Their horns are especially prized, and are used in religious offerings or as trophies or drinking cups.\n\nIn many hopeful settlements, the aurochs' strength and hardiness is particularly valued and has seen it used as a draught or pack animal. In contrast with regular cattle however, aurochs are generally inefficient for milk production, and are instead usually kept for meat.</description>
+        <statBases>
+            <MoveSpeed>3.6</MoveSpeed>
+            <MarketValue>325</MarketValue>
+            <FilthRate>17</FilthRate>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <CaravanRidingSpeedFactor>1.1</CaravanRidingSpeedFactor>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>3</milkIntervalDays>
+                <milkAmount>20</milkAmount>
+            </li>
+        </comps>
+        <race>
+            <body>MLW_QuadrupedAnimalWithHoovesAndHorns</body>
+            <herdAnimal>true</herdAnimal>
+            <baseBodySize>3.0</baseBodySize>
+            <baseHungerRate>0.805</baseHungerRate>
+            <baseHealthScale>2.0</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <wildness>0.35</wildness>
+            <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <roamMtbDays>1</roamMtbDays>
+            <trainability>None</trainability>
+            <packAnimal>true</packAnimal>
+            <useMeatFrom>Cow</useMeatFrom>
+            <gestationPeriodDays>6.66</gestationPeriodDays>
+            <lifeExpectancy>20</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.4</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <wildBiomes>
+                <AridShrubland>0.15</AridShrubland>
+                <BorealForest>0.10</BorealForest>
+                <TemperateForest>0.50</TemperateForest>
+                <TemperateSwamp>0.15</TemperateSwamp>
+            </wildBiomes>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.6</chanceFactor>
+            </li>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>horns</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>MLW_Aurochs</defName>
+        <label>aurochs cow</label>
+        <labelMale>aurochs bull</labelMale>
+        <race>MLW_Aurochs</race>
+        <combatPower>125</combatPower>
+        <ecoSystemWeight>1.1</ecoSystemWeight>
+        <wildGroupSize>4~8</wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>calf</label>
+                <labelPlural>calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsBaby</texPath>
+                    <drawSize>1.4</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsBaby</texPath>
+                    <drawSize>1.3</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochsBaby</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochsBaby</texPath>
+                    <drawSize>1.3</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsMale</texPath>
+                    <drawSize>2.4</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsFemale</texPath>
+                    <drawSize>2.1</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochs</texPath>
+                    <drawSize>2.4</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochs</texPath>
+                    <drawSize>2.1</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsMale</texPath>
+                    <drawSize>3.2</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_AurochsFemale</texPath>
+                    <drawSize>2.8</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochs</texPath>
+                    <drawSize>3.2</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/MLW_Aurochs/MLW_DessicatedAurochs</texPath>
+                    <drawSize>2.8</drawSize>
+                </femaleDessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>HornAttackTool</bodyPartGroup>
+                    <thing>MLW_AurochsHorn</thing>
+                    <allowFemale>true</allowFemale>
+                </butcherBodyPart>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

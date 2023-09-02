@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Yamazaki_Boomcow</defName>
+    <label>highland boomcow</label>
+    <description>A special breed of cattle that can trace its origins all the way back to the nation of Scotland of old earth. \n\nIt's a friendly breed of cattle that makes as good of a house pet as it does a field animal. It's built with a smaller frame than the standard breed of cattle found on rimworlds. Owing to it's smaller stature, it doesn't need to eat as much as the standard breed, making it an economical choice when food is scarce. It's thick fur makes it an ideal farm animal in cold climates. \n\nDespite it's high quality beef, this breed of cattle has been genetically modified to produce chemfuel instead of milk, so it's not advised to be kept as a meat animal as it explodes on death. \n\nIt's been affectionately referred to as a "boomcoo", or a "boomoo" by its admirers.</description>
+    <statBases>
+      <MoveSpeed>3.2</MoveSpeed>
+      <ComfyTemperatureMax>30</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <MarketValue>500</MarketValue>
+      <FilthRate>12</FilthRate>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Chemfuel</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>14</milkAmount>
+        <milkFemaleOnly>true</milkFemaleOnly>
+      </li>
+    </comps>
+    <race>
+      <body>QuadrupedAnimalWithHooves</body>
+      <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+      <executionRange>6</executionRange>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>2.2</baseBodySize>
+      <baseHungerRate>0.333</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <wildness>0</wildness>
+      <roamMtbDays>3</roamMtbDays>
+      <trainability>None</trainability>
+      <nuzzleMtbHours>48</nuzzleMtbHours>
+      <meatLabel>beef</meatLabel>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeExpectancy>22</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.20</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3333</minAge>
+          <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+          <soundDeath>Pawn_Muffalo_Death</soundDeath>
+          <soundCall>Pawn_Muffalo_Call</soundCall>
+          <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.09)</li>
+        <li>(0.28, 0, 0)</li>
+        <li>(0.0, 0, -0.04)</li>
+        <li>(-0.28, 0, 0)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalUncommon</li>
+      <li>AnimalFarm</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.8</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>left hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right hoof</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Yamazaki_Boomcow</defName>
+    <label>boomcow</label>
+    <labelMale>boombull</labelMale>
+    <race>Yamazaki_Boomcow</race>
+    <combatPower>75</combatPower>
+    <ecoSystemWeight>1.1</ecoSystemWeight>
+    <wildGroupSize>3~7</wildGroupSize>
+    <alternateGraphicChance>0.3</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>Things/Pawn/Animal/Boomcow/Boomcow1</texPath></li>
+      <li><texPath>Things/Pawn/Animal/Boomcow/Boomcow2</texPath></li>
+      <li><texPath>Things/Pawn/Animal/Boomcow/Boomcow3</texPath></li>
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <label>boomcalf</label>
+        <labelPlural>boomcalves</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Boomcow/Boomcow1</texPath>
+          <drawSize>1.3</drawSize>
+          <color>(170,170,170)</color>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cow/Dessicated_Bull</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Boomcow/Boomcow1</texPath>
+          <drawSize>2.15</drawSize>
+          <color>(170,170,170)</color>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cow/Dessicated_Bull</texPath>
+          <drawSize>2.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Boomcow/Boomcow1</texPath>
+          <drawSize>2.7</drawSize>
+          <color>(170,170,170)</color>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cow/Dessicated_Bull</texPath>
+          <drawSize>2.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

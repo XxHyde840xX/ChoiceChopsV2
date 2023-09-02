@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <aka_Tanuki.label>タヌキ</aka_Tanuki.label>
+  <aka_Tanuki.description>臆病な性格の動物で、犬の仲間。\n昔は人間に化けて人里へやってくると言われていた。</aka_Tanuki.description>
+  <aka_Tanuki.tools.0.label>left claw</aka_Tanuki.tools.0.label>
+  <aka_Tanuki.tools.1.label>right claw</aka_Tanuki.tools.1.label>
+  <aka_Tanuki.tools.3.label>head</aka_Tanuki.tools.3.label>
+  <aka_Tanuki_Meat.label>タヌキの肉</aka_Tanuki_Meat.label>
+  <aka_Tanuki_Meat.description>タヌキの肉</aka_Tanuki_Meat.description>
+  <aka_Tanuki_Corpse.label>タヌキの死骸</aka_Tanuki_Corpse.label>
+  <aka_Tanuki_Corpse.description>タヌキの死骸</aka_Tanuki_Corpse.description>
+
+
+</LanguageData>

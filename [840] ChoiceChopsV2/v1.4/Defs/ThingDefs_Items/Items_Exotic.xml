@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>MLW_AurochsHorn</defName>
+        <label>aurochs horn</label>
+        <description>A horn of an aurochs. It's particularly valuable thanks to its durability, which has seen it used for a variety of things throughout history, such as drinking vessels or religious offerings. It could also be used as an unwieldy, yet still deadly melee weapon.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/MLW_AurochsHorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>25</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>0.7</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>20</stackLimit>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>12.5</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+</Defs>

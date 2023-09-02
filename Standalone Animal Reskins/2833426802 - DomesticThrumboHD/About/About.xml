@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Domestic Thrumbo</name>
+  <packageId>Pentirin.DogThrumbo</packageId>
+  <author>Pentirin</author>
+  <url>https://github.com/Pentirin/DomesticThrumboRimworld</url>
+  <supportedVersions>
+    <li>1.3</li>
+	<li>1.4</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>A little doggy thrumbo! Can still eat trees.
+</description>
+</ModMetaData>

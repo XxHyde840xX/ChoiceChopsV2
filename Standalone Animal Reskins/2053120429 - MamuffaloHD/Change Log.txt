@@ -1,0 +1,32 @@
+Mamuffalo 
+Change Log
+
+Updated to A17 by KapTaiN_KaVerN
+
+------------------------------------------
+
+V1.04
+-Fixed "defaultCooldownTime" from "100" to "1.65". Same as Muffalo.
+-Minor bug fixes
+
+--------------------------------
+
+V1.03
+-A16 Update
+
+--------------------------------
+
+V1.02
+-Now with Pack Mamuffalo
+-Added to ice sheet biome
+-More minor bug fixes
+
+--------------------------------
+
+V1.01
+-Minor bug fixes
+
+--------------------------------
+
+V1.0
+-Initial Release

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>	
+
+<Operation Class="PatchOperationSequence">
+	
+  <operations>
+ 		<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Chicken"]/lifeStages/li[2]/bodyGraphicData</xpath>
+				<value>
+				<bodyGraphicData>
+          <texPath>Rooster</texPath>
+          <drawSize>0.75</drawSize>
+          <color>(200,150,85)</color>
+        </bodyGraphicData>
+				</value>
+			</li>
+
+ 		<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Chicken"]/lifeStages/li[3]/bodyGraphicData</xpath>
+				<value>
+				<bodyGraphicData>
+          <texPath>Rooster</texPath>
+          <drawSize>0.87</drawSize>
+          <color>(200,150,85)</color>
+        </bodyGraphicData>
+				</value>
+			</li>
+		
+	<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Chicken"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+				<bodyGraphicData>
+          <texPath>Chick</texPath>
+          <drawSize>0.45</drawSize>
+          <color>(223,219,108)</color>
+		  </bodyGraphicData>
+				</value>
+			</li>
+			
+	<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Duck"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+				<bodyGraphicData>
+          <texPath>Duckling</texPath>
+          <drawSize>0.45</drawSize>
+		  </bodyGraphicData>
+				</value>
+			</li>		
+		
+  </operations>
+</Operation>		
+	
+</Patch>

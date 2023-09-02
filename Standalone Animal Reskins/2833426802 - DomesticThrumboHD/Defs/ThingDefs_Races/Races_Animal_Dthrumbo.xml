@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+    <defName>DomesticThrumboPentirin</defName>
+    <label>domestic thrumbo</label>
+    <description>A miniature thrumbo, lacking many features of it's non-domestic counterpart.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+      <MarketValue>2000</MarketValue>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <petness>0.02</petness>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>.5</baseBodySize>
+      <baseHungerRate>0.5</baseHungerRate>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreAnimal, DendrovoreAnimal</foodType>
+      <leatherDef>Leather_Thrumbo</leatherDef>
+      <gestationPeriodDays>15</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0</wildness>
+      <nuzzleMtbHours>24</nuzzleMtbHours>
+      <litterSizeCurve>
+        <points>
+          <li>(3, 0)</li>
+          <li>(5, 1)</li>
+          <li>(6, 1.7)</li>
+          <li>(8, 0.7)</li>
+          <li>(10, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>DomesticThrumboPentirin</defName>
+    <label>domestic thrumbo</label>
+    <labelPlural>domestic thrumbos</labelPlural>
+    <race>DomesticThrumboPentirin</race>
+    <combatPower>85</combatPower>
+    <lifeStages>
+      <li>
+        <label>Domestic Thrumbo Foal</label>
+        <labelPlural>Domestic Thrumbo Foals</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/DomesticThrumbo</texPath>
+          <drawSize>.50</drawSize>
+          <color>(255,255,255)</color>
+          <shadowData>
+            <volume>(0.2, 0.1, 0.2)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/YorkshireTerrier/Dessicated_YorkshireTerrier</texPath>
+          <drawSize>.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/DomesticThrumbo</texPath>
+          <drawSize>.75</drawSize>
+          <color>(255,255,255)</color>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/YorkshireTerrier/Dessicated_YorkshireTerrier</texPath>
+          <drawSize>.50</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/DomesticThrumbo</texPath>
+          <drawSize>1.0</drawSize>
+          <color>(255,255,255)</color>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/YorkshireTerrier/Dessicated_YorkshireTerrier</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

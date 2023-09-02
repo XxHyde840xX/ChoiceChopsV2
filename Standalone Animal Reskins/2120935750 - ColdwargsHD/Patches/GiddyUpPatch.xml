@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+      <mods>
+			<li>Giddy-up! Core</li>
+	  </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+       
+      <li Class="PatchOperationAddModExtension">
+        <xpath>*/ThingDef[defName = "Coldwarg"]</xpath>
+        <value>
+          <li Class="GiddyUpCore.DrawingOffsetPatch">
+              <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+              <northOffsetCSV>0,0,-0.5</northOffsetCSV>
+              <!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->
+              <southOffsetCSV>0,1,-0.2</southOffsetCSV>
+              <eastOffsetCSV>0,0,-0.2</eastOffsetCSV>
+              <westOffsetCSV>0,0,-0.2</westOffsetCSV>
+          </li>
+        </value>
+      </li>
+
+
+		</operations>
+		</match>
+	</Operation>
+
+
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Battle Mounts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>*/ThingDef[defName = "Coldwarg"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.0</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>false</useMetalArmor>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

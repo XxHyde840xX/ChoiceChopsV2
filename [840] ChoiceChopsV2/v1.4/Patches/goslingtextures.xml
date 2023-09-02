@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>	
+
+<Operation Class="PatchOperationSequence">
+	
+  <operations>
+	<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Goose"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+				<bodyGraphicData>
+          <texPath>Goose_Duckling</texPath>
+          <drawSize>0.6</drawSize>
+		  </bodyGraphicData>
+				</value>
+			</li>		
+	<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName = "Goose"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
+				<value>
+				<dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Goose/Dessicated_Goose</texPath>
+          <drawSize>0.6</drawSize>
+		  </dessicatedBodyGraphicData>
+				</value>
+			</li>		
+		
+  </operations>
+</Operation>		
+	
+</Patch>

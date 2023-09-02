@@ -16,11 +16,20 @@
 				
 				- Milkrats / Tanuki / Rhodesian Ridgebacks / Pygmy Muffalo / Mamuffalo / Meat Pigs / Domestic Thrumbo / Coldwarg
 				- Beefeaters / Muffaloaves / Boomaphants / Insect Meat Reskin / Another Milk Retexture - Re-Bagged! (I hackjobbed this one!)
+				- For The (HD) Birds! / The Ugly Duckling / Aurochs / Highland Boomcow / Charming Chihuahuas (Tribute) / Machnorian Chicken
 				
 			Additional Notes:
 				
 				- I've removed the glow comp from the Muffaloves. It was a stationary one that the plants use. It's better now.
 				- I've also remove the patches for the "A Dog Said" mod as I don't use it. Sorry folks!
+				- The Ugly Duckling is a retexture for baby geese. They're called goslings silly. I was confused by this mod too.
+				- The Chihuahua is cute as hell and has features listed below. The Machnorian Chicken produces eggs that refine into yayo.
+					
+					- Life Stages: Experience the growth of chihuahuas from adorable puppies to playful juveniles and chonky adults.
+					- Bonding: After forming bonds with your colonists, chihuahuas provide frequent comedic relief (+2 mental buff) and emotional support (+4 mental buff).
+					- Healing Licks: Able to heal wounds of nearby colonists and animals.
+					- Piercing Bark: Chihuahuas now have a bark ability that can hurt enemies from a range (optional).
+					- Digging: Chihuahuas occasionally dig up a range of resources.
 				
 	- [Geometric Floors, More Floor Coverings, and Royal Carpets by JF]
 			- Love the mods, hate the vRAM usage on startup. Seriously, everything needed downscaling. Even the icons.
@@ -35,12 +44,7 @@
 			- All it was was just tweaked textures but it makes all the difference, especially once it was pointed out.
 			- Enjoy the power switch! I know I do, the vanilla one is bland as hell.	
 
-      =============================================================================================================================
-		
-	This marks the end of this particular modpack. I've learned alot along the way, and despite the quirks, incompatibilities, and
-	dependencies, I think I did an alright job for my first outing at putting something together. My only, and biggest regret with
-	this project is that I will not be able to release it publicly. I will be working on other packs like this in the future, as well
-	as some sorely needed original content, but in the meantime, I hope you enjoy XxHyde840xX's Choice Chops. Stay Safe, and Have Fun.  
+      =============================================================================================================================  
 	  
 	XxHyde840xX - o7
 	  
@@ -66,6 +70,11 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
 		</li>
 		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
 			<packageId>Ludeon.RimWorld.Royalty</packageId>
 			<displayName>Royalty</displayName>
 		</li>
@@ -84,6 +93,7 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>Mlie.DogsMate</li>
 		<li>OskarPotocki.VFE.Insectoid</li>
         <li>VanillaExpanded.VGeneticsE</li>

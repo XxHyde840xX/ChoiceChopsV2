@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ReGrowth: Aspen</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "MLW_Aurochs"]/race/wildBiomes</xpath>
+                    <value>
+                        <RG_AspenForest>0.25</RG_AspenForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "RG_AspenForest"]/allowedPackAnimals</xpath>
+                    <value>
+                        <li>MLW_Aurochs</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
