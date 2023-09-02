@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<?xml version="1.0" encoding="utf-8"?>
-
 <ModMetaData>
     <name>XxHyde840xX's Choice Chops - Volume Two</name>
     <author>XxHyde840xX/Various</author>
@@ -55,10 +53,10 @@
 	  =============================================================================================================================
 			
 	</description>
-    <packageId>840.Choice.Chops.V2</packageId>
-    <supportedVersions>
-        <li>1.4</li>
-    </supportedVersions>
+		<packageId>840.Choice.Chops.V2</packageId>
+			<supportedVersions>
+				<li>1.4</li>
+			</supportedVersions>
     <incompatibleWith>
 		<li></li>
 	</incompatibleWith>
