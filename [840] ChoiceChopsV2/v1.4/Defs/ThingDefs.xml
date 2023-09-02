@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Base ================= -->
+  
+  <ThingDef Name="JFRoyalCarpets" ParentName="BuildingBase" Abstract="True">
+    <description>Paint the colour you like! Carpet with golden edgings. A perfect choice for satisfying your ego, or perhaps vanity.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(184, 184, 184)</color>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom8</li>
+      </linkFlags>
+    </graphicData>
+    <costList>
+      <Cloth>7</Cloth>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>4</Beauty>
+      <Flammability>1</Flammability>     
+    </statBases>
+    <building>
+      <isEdifice>false</isEdifice>
+      <paintable>true</paintable>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintGraphicData>
+        <texPath>Blueprint/E_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <altitudeLayer>Floor</altitudeLayer>
+    <designatorDropdown>Furniture_RoyalCarpets</designatorDropdown>
+    <passability>Standable</passability>
+    <blockWind>false</blockWind>
+    <blockPlants>true</blockPlants>
+    <fertility>0</fertility>
+    <castEdgeShadows>false</castEdgeShadows>
+    <placingDraggableDimensions>2</placingDraggableDimensions>
+    <rotatable>false</rotatable>
+    <designationCategory>Furniture</designationCategory>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>true</canOverlapZones>
+    <researchPrerequisites>
+      <li>CarpetMaking</li>
+    </researchPrerequisites>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Type ================= -->
+  
+  <ThingDef ParentName="JFRoyalCarpets">
+    <defName>JFRoyalCarpets_A</defName>
+    <label>Royal Carpet A</label>
+    <graphicData>
+      <texPath>Linked/A</texPath>
+    </graphicData>
+    <uiIconPath>Icon/A</uiIconPath>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFRoyalCarpets">
+    <defName>JFRoyalCarpets_B</defName>
+    <label>Royal Carpet B</label>
+    <graphicData>
+      <texPath>Linked/B</texPath>
+    </graphicData>
+    <uiIconPath>Icon/B</uiIconPath>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFRoyalCarpets">
+    <defName>JFRoyalCarpets_C</defName>
+    <label>Royal Carpet C</label>
+    <graphicData>
+      <texPath>Linked/C</texPath>
+    </graphicData>
+    <uiIconPath>Icon/C</uiIconPath>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFRoyalCarpets">
+    <defName>JFRoyalCarpets_D</defName>
+    <label>Royal Carpet D</label>
+    <graphicData>
+      <texPath>Linked/D</texPath>
+    </graphicData>
+    <uiIconPath>Icon/D</uiIconPath>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFRoyalCarpets">
+    <defName>JFRoyalCarpets_E</defName>
+    <label>Royal Carpet E</label>
+    <graphicData>
+      <texPath>Linked/E</texPath>
+      <linkType>Transmitter</linkType>
+    </graphicData>
+    <uiIconPath>Icon/E</uiIconPath>
+  </ThingDef>
+
+</Defs>

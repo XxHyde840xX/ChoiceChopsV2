@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Furniture_RoyalCarpets</defName>
+    <label>Royal Carpets</label>
+  </DesignatorDropdownGroupDef>
+  
+   <DesignatorDropdownGroupDef>
+    <defName>BottomLayer_Small</defName>
+    <label>Small bottom layer</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>BottomLayer_Medium</defName>
+    <label>Medium bottom layer</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>BottomLayer_Large</defName>
+    <label>Large bottom layer</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>TopLayer_Small</defName>
+    <label>Small top layer</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>TopLayer_Medium</defName>
+    <label>Medium top layer</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>TopLayer_Large</defName>
+    <label>Large top layer</label>
+  </DesignatorDropdownGroupDef>
+  
+    <DesignatorDropdownGroupDef>
+    <defName>Floor_StarInSquare</defName>
+    <label>Star-in-square floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_StarInCircle</defName>
+    <label>Star-in-circle floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_RibbonAndStar</defName>
+    <label>Ribbon-and-star floor</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_PeacockFeather</defName>
+    <label>Peacock feather floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_Squircle</defName>
+    <label>Squircle floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FlowerInCircle</defName>
+    <label>Flower-in-circle floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FishScaleA</defName>
+    <label>Fish scale floor A</label>
+  </DesignatorDropdownGroupDef>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FishScaleB</defName>
+    <label>Fish scale floor B</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FleurDeLisA</defName>
+    <label>Fleur-de-lis floor A</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FleurDeLisB</defName>
+    <label>Fleur-de-lis floor B</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FloralA</defName>
+    <label>Floral floor A</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_FloralB</defName>
+    <label>Floral floor B</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_Hexagon</defName>
+    <label>Hexagon floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_Mosaic</defName>
+    <label>Mosaic floor</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_CircuitA</defName>
+    <label>Circuit floor A</label>
+  </DesignatorDropdownGroupDef>
+  
+  <DesignatorDropdownGroupDef>
+    <defName>Floor_CircuitB</defName>
+    <label>Circuit floor B</label>
+  </DesignatorDropdownGroupDef>
+  
+</Defs>

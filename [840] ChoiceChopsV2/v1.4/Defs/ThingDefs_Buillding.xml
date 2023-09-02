@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef ParentName="BuildingBase">
+    <defName>JDSPowerSwitch</defName>
+    <label>Power Switch</label>
+    <description>Switches power on/off.</description>
+    <thingClass>Building_PowerSwitch</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/PowerSwitch</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+       <shaderType>Transparent</shaderType>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>	
+	<defaultPlacingRot>South</defaultPlacingRot>
+    <size>(1,1)</size>	
+    <building>
+		<canPlaceOverWall>true</canPlaceOverWall>
+		<isEdifice>false</isEdifice>
+		<ai_chillDestination>false</ai_chillDestination>
+		<allowWireConnection>true</allowWireConnection>
+    </building>
+    <altitudeLayer>Item</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <placingDraggableDimensions>0</placingDraggableDimensions>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>	
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <tickerType>Normal</tickerType>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

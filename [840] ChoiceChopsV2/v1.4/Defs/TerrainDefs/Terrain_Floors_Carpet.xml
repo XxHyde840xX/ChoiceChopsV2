@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Type ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_Carpet" Abstract="True">
+    <description>Paint the colour you like! Carpet with complex patterns. Though not as luxurious as the gilded one, still, a good choice for satisfying your ego, or perhaps vanity.</description>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <Cloth>15</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>3</Beauty>
+      <Flammability>0.32</Flammability>
+      <WorkToBuild>1600</WorkToBuild>
+      <CleaningTimeFactor>2</CleaningTimeFactor>
+    </statBases>
+    <fertility>0</fertility>
+    <designationCategory>Floors</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <isPaintable>true</isPaintable>
+    <burnedDef>BurnedCarpet</burnedDef>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <renderPrecedence>200</renderPrecedence>
+    <uiOrder>2116</uiOrder>
+  </TerrainDef>
+
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_StarInSquare</defName>
+    <label>Star-in-square carpet</label>
+    <texturePath>Floors/StarInSquare/General</texturePath>
+    <uiIconPath>Icons/StarInSquare/General</uiIconPath>
+    <designatorDropdown>Floor_StarInSquare</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_StarInCircle</defName>
+    <label>Star-in-circle carpet</label>
+    <texturePath>Floors/StarInCircle/General</texturePath>
+    <uiIconPath>Icons/StarInCircle/General</uiIconPath>
+    <designatorDropdown>Floor_StarInCircle</designatorDropdown>
+  </TerrainDef>
+
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_RibbonAndStar</defName>
+    <label>Ribbon-and-star carpet</label>
+    <texturePath>Floors/RibbonAndStar/General</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/General</uiIconPath>
+    <designatorDropdown>Floor_RibbonAndStar</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_PeacockFeather</defName>
+    <label>Peacock feather carpet</label>
+    <texturePath>Floors/PeacockFeather/General</texturePath>
+    <uiIconPath>Icons/PeacockFeather/General</uiIconPath>
+    <designatorDropdown>Floor_PeacockFeather</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_Squircle</defName>
+    <label>Squircle carpet</label>
+    <texturePath>Floors/Squircle/General</texturePath>
+    <uiIconPath>Icons/Squircle/General</uiIconPath>
+    <designatorDropdown>Floor_Squircle</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FlowerInCircle</defName>
+    <label>Flower-in-circle carpet</label>
+    <texturePath>Floors/FlowerInCircle/General</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/General</uiIconPath>
+    <designatorDropdown>Floor_FlowerInCircle</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FishScaleA</defName>
+    <label>Fish scale carpet A</label>
+    <texturePath>Floors/FishScaleA/General</texturePath>
+    <uiIconPath>Icons/FishScaleA/General</uiIconPath>
+    <designatorDropdown>Floor_FishScaleA</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FishScaleB</defName>
+    <label>Fish scale carpet B</label>
+    <texturePath>Floors/FishScaleB/General</texturePath>
+    <uiIconPath>Icons/FishScaleB/General</uiIconPath>
+    <designatorDropdown>Floor_FishScaleB</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FleurDeLisA</defName>
+    <label>Fleur-de-lis carpet A</label>
+    <texturePath>Floors/FleurDeLisA/General</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/General</uiIconPath>
+    <designatorDropdown>Floor_FleurDeLisA</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FleurDeLisB</defName>
+    <label>Fleur-de-lis carpet B</label>
+    <texturePath>Floors/FleurDeLisB/General</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/General</uiIconPath>
+    <designatorDropdown>Floor_FleurDeLisB</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FloralA</defName>
+    <label>Floral carpet A</label>
+    <texturePath>Floors/FloralA/General</texturePath>
+    <uiIconPath>Icons/FloralA/General</uiIconPath>
+    <designatorDropdown>Floor_FloralA</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_FloralB</defName>
+    <label>Floral carpet B</label>
+    <texturePath>Floors/FloralB/General</texturePath>
+    <uiIconPath>Icons/FloralB/General</uiIconPath>
+    <designatorDropdown>Floor_FloralB</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_Hexagon</defName>
+    <label>Hexagon carpet</label>
+    <texturePath>Floors/Hexagon/General</texturePath>
+    <uiIconPath>Icons/Hexagon/General</uiIconPath>
+    <designatorDropdown>Floor_Hexagon</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_Mosaic</defName>
+    <label>Mosaic carpet</label>
+    <texturePath>Floors/Mosaic/General</texturePath>
+    <uiIconPath>Icons/Mosaic/General</uiIconPath>
+    <designatorDropdown>Floor_Mosaic</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_CircuitA</defName>
+    <label>Circuit carpet A</label>
+    <texturePath>Floors/CircuitA/General</texturePath>
+    <uiIconPath>Icons/CircuitA/General</uiIconPath>
+    <designatorDropdown>Floor_CircuitA</designatorDropdown>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_Carpet">
+    <defName>JFGeometricFloors_Carpet_CircuitB</defName>
+    <label>Circuit carpet B</label>
+    <texturePath>Floors/CircuitB/General</texturePath>
+    <uiIconPath>Icons/CircuitB/General</uiIconPath>
+    <designatorDropdown>Floor_CircuitB</designatorDropdown>
+  </TerrainDef>
+  
+</Defs>

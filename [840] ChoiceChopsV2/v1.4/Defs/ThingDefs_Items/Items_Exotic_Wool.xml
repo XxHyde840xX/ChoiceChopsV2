@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="WoolBase">
+		<defName>MamuffaloWool</defName>
+		<label>mamuffalo wool</label>
+		<description>While somewhat coarse, mamuffalo wool's long fibres make it very strong and provides very good insulation. Wool clothes can keep the body warm even in extreme conditions.</description>
+		<graphicData>
+			<color>(139,93,35)</color>
+		</graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.80</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+    </statBases>
+	<stuffProps>
+      <color>(139,93,35)</color>
+    </stuffProps>
+	</ThingDef>
+  
+</Defs>

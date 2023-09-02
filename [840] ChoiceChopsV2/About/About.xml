@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+    <name>XxHyde840xX's Choice Chops - Volume Two</name>
+    <author>XxHyde840xX/Various</author>
+	<url>https://github.com/XxHyde840xX/ChoiceChopsV2</url>
+    <description>Another selection of choice items, carefully chopped from their respective mods. An exhaustive list is as follows;
+	
+	- [Animals And Reskins]
+			- There a a good chunk of these, I'm not cross referencing for links. There's far too many and I just want to package them up.
+			- This is one of those "I'm trimming my list without trimming my list," inclusions. Sorry folks!
+			- I am not the original author of these and all credit goes to the original creators and artists who did the reskins.
+			- Obviously incompatible with the original versions, so if you see any of the below animals or skins in your list, yeet 'em!
+				
+				- Milkrats / Tanuki / Rhodesian Ridgebacks / Pygmy Muffalo / Mamuffalo / Meat Pigs / Domestic Thrumbo / Coldwarg
+				- Beefeaters / Muffaloaves / Boomaphants / Insect Meat Reskin / Another Milk Retexture - Re-Bagged! (I hackjobbed this one!)
+				
+			Additional Notes:
+				
+				- I've removed the glow comp from the Muffaloves. It was a stationary one that the plants use. It's better now.
+				- I've also remove the patches for the "A Dog Said" mod as I don't use it. Sorry folks!
+				
+	- [Geometric Floors, More Floor Coverings, and Royal Carpets by JF]
+			- Love the mods, hate the vRAM usage on startup. Seriously, everything needed downscaling. Even the icons.
+			- 1024x1024 MAXIMUM for floor textures. Icons down to 128x128 because they were nice.
+			- There were around 800-900 textures resized, and it's only around 100-ish MB or so now.
+			- Don't want the decor? Deal with it. It's here, and I'm not downscaling it again if my files reset for some reason.
+			- The carpets were honestly fine, but they're here too.
+			
+	- [JD's Simple Switch with Fixed Light Offsets]
+			- I liked the switch. The lights were off. They are now where they should be. I didn't even notice the issue.
+			- Big thanks to CaptainArbitrary in the RimWorld Discord Server for both alerting me to the problem, and having a fix.
+			- All it was was just tweaked textures but it makes all the difference, especially once it was pointed out.
+			- Enjoy the power switch! I know I do, the vanilla one is bland as hell.	
+
+      =============================================================================================================================
+		
+	This marks the end of this particular modpack. I've learned alot along the way, and despite the quirks, incompatibilities, and
+	dependencies, I think I did an alright job for my first outing at putting something together. My only, and biggest regret with
+	this project is that I will not be able to release it publicly. I will be working on other packs like this in the future, as well
+	as some sorely needed original content, but in the meantime, I hope you enjoy XxHyde840xX's Choice Chops. Stay Safe, and Have Fun.  
+	  
+	XxHyde840xX - o7
+	  
+	  =============================================================================================================================
+	  |     This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.      |
+	  |              To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/                      |
+	  |                  or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.                         |
+	  =============================================================================================================================
+			
+	</description>
+    <packageId>840.Choice.Chops.V2</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <incompatibleWith>
+		<li></li>
+	</incompatibleWith>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Ideology</packageId>
+			<displayName>Ideology</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>Mlie.DogsMate</li>
+		<li>OskarPotocki.VFE.Insectoid</li>
+        <li>VanillaExpanded.VGeneticsE</li>
+        <li>sarg.rimbees</li>
+        <li>sarg.alphaanimals</li>
+		<li>VFME.SimpleTofu</li>
+	</loadAfter>
+</ModMetaData>

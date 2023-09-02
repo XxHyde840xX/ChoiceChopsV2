@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>Mamuffalo_1</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>Mamuffalo_2</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>Mamuffalo_3</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>Mamuffalo_4</texName>
+      </skin>
+    </variants>
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

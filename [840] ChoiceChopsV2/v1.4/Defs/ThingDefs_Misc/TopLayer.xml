@@ -1,0 +1,3045 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Base ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer" ParentName="BuildingBase">
+    <altitudeLayer>FloorCoverings</altitudeLayer>
+    <blockPlants>true</blockPlants>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <designationCategory>Floors</designationCategory>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <building>
+      <isEdifice>false</isEdifice>
+      <paintable>true</paintable>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+    </building>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <blocksAltitudes>
+      <li>FloorCoverings</li>
+    </blocksAltitudes>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>  
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <uiOrder>2118</uiOrder>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Canteen" ParentName="JFTopLayer">
+    <description>Canteen top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Canteen</texPath>
+      <color>(206, 206, 206)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Canteen</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Canteen">
+    <defName>JFTopLayer_Canteen_Small</defName>
+    <label>Canteen top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Canteen">
+    <defName>JFTopLayer_Canteen_Medium</defName>
+    <label>Canteen top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Canteen">
+    <defName>JFTopLayer_Canteen_Large</defName>
+    <label>Canteen top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Freeze" ParentName="JFTopLayer">
+    <description>Freeze top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Freeze</texPath>
+      <color>(28, 171, 226)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Freeze</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Freeze">
+    <defName>JFTopLayer_Freeze_Small</defName>
+    <label>Freeze top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Freeze">
+    <defName>JFTopLayer_Freeze_Medium</defName>
+    <label>Freeze top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Freeze">
+    <defName>JFTopLayer_Freeze_Large</defName>
+    <label>Freeze top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Hotel" ParentName="JFTopLayer">
+    <description>Hotel top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Hotel</texPath>
+      <color>(206, 206, 206)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Hotel</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Hotel">
+    <defName>JFTopLayer_Hotel_Small</defName>
+    <label>Hotel top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Hotel">
+    <defName>JFTopLayer_Hotel_Medium</defName>
+    <label>Hotel top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Hotel">
+    <defName>JFTopLayer_Hotel_Large</defName>
+    <label>Hotel top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_RoyalA" ParentName="JFTopLayer">
+    <description>Royal top layer A.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/RoyalA</texPath>
+      <color>(31, 75, 179)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/RoyalA</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_RoyalA">
+    <defName>JFTopLayer_RoyalA_Small</defName>
+    <label>Royal top layer A (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RoyalA">
+    <defName>JFTopLayer_RoyalA_Medium</defName>
+    <label>Royal top layer A (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RoyalA">
+    <defName>JFTopLayer_RoyalA_Large</defName>
+    <label>Royal top layer A (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_RoyalB" ParentName="JFTopLayer">
+    <description>Royal top layer B.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/RoyalB</texPath>
+      <color>(31, 75, 179)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/RoyalB</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_RoyalB">
+    <defName>JFTopLayer_RoyalB_Small</defName>
+    <label>Royal top layer B (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RoyalB">
+    <defName>JFTopLayer_RoyalB_Medium</defName>
+    <label>Royal top layer B (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RoyalB">
+    <defName>JFTopLayer_RoyalB_Large</defName>
+    <label>Royal top layer B (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Beer" ParentName="JFTopLayer">
+    <description>Beer top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Beer</texPath>
+      <color>(249, 143, 14)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Beer</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Beer">
+    <defName>JFTopLayer_Beer_Small</defName>
+    <label>Beer top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Beer">
+    <defName>JFTopLayer_Beer_Medium</defName>
+    <label>Beer top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Beer">
+    <defName>JFTopLayer_Beer_Large</defName>
+    <label>Beer top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Butcher" ParentName="JFTopLayer">
+    <description>Butcher top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Butcher</texPath>
+      <color>(207, 50, 58)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Butcher</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Butcher">
+    <defName>JFTopLayer_Butcher_Small</defName>
+    <label>Butcher top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Butcher">
+    <defName>JFTopLayer_Butcher_Medium</defName>
+    <label>Butcher top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Butcher">
+    <defName>JFTopLayer_Butcher_Large</defName>
+    <label>Butcher top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Drop" ParentName="JFTopLayer">
+    <description>Drop top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Drop</texPath>
+      <color>(138, 3, 3)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Drop</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Drop">
+    <defName>JFTopLayer_Drop_Small</defName>
+    <label>Drop top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Drop">
+    <defName>JFTopLayer_Drop_Medium</defName>
+    <label>Drop top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Drop">
+    <defName>JFTopLayer_Drop_Large</defName>
+    <label>Drop top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Gene" ParentName="JFTopLayer">
+    <description>Gene top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Gene</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Gene</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Gene">
+    <defName>JFTopLayer_Gene_Small</defName>
+    <label>Gene top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Gene">
+    <defName>JFTopLayer_Gene_Medium</defName>
+    <label>Gene top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Gene">
+    <defName>JFTopLayer_Gene_Large</defName>
+    <label>Gene top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_HotSpring" ParentName="JFTopLayer">
+    <description>Hot spring top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/HotSpring</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/HotSpring</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_HotSpring">
+    <defName>JFTopLayer_HotSpring_Small</defName>
+    <label>Hot spring top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_HotSpring">
+    <defName>JFTopLayer_HotSpring_Medium</defName>
+    <label>Hot spring top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_HotSpring">
+    <defName>JFTopLayer_HotSpring_Large</defName>
+    <label>Hot spring top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Tavern" ParentName="JFTopLayer">
+    <description>Tavern top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Tavern</texPath>
+      <color>(249, 143, 14)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Tavern</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Tavern">
+    <defName>JFTopLayer_Tavern_Small</defName>
+    <label>Tavern top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Tavern">
+    <defName>JFTopLayer_Tavern_Medium</defName>
+    <label>Tavern top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Tavern">
+    <defName>JFTopLayer_Tavern_Large</defName>
+    <label>Tavern top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Warehouse" ParentName="JFTopLayer">
+    <description>Warehouse top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Warehouse</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Warehouse</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Warehouse">
+    <defName>JFTopLayer_Warehouse_Small</defName>
+    <label>Warehouse top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Warehouse">
+    <defName>JFTopLayer_Warehouse_Medium</defName>
+    <label>Warehouse top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Warehouse">
+    <defName>JFTopLayer_Warehouse_Large</defName>
+    <label>Warehouse top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Wine" ParentName="JFTopLayer">
+    <description>Wine top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Wine</texPath>
+      <color>(147, 12, 52)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Wine</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Wine">
+    <defName>JFTopLayer_Wine_Small</defName>
+    <label>Wine top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Wine">
+    <defName>JFTopLayer_Wine_Medium</defName>
+    <label>Wine top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Wine">
+    <defName>JFTopLayer_Wine_Large</defName>
+    <label>Wine top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Xenohuman" ParentName="JFTopLayer">
+    <description>Xenohuman top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Xenohuman</texPath>
+      <color>(145, 60, 60)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Xenohuman</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Xenohuman">
+    <defName>JFTopLayer_Xenohuman_Small</defName>
+    <label>Xenohuman top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Xenohuman">
+    <defName>JFTopLayer_Xenohuman_Medium</defName>
+    <label>Xenohuman top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Xenohuman">
+    <defName>JFTopLayer_Xenohuman_Large</defName>
+    <label>Xenohuman top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Biohazard" ParentName="JFTopLayer">
+    <description>Biohazard top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Biohazard</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Biohazard</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Biohazard">
+    <defName>JFTopLayer_Biohazard_Small</defName>
+    <label>Biohazard top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Biohazard">
+    <defName>JFTopLayer_Biohazard_Medium</defName>
+    <label>Biohazard top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Biohazard">
+    <defName>JFTopLayer_Biohazard_Large</defName>
+    <label>Biohazard top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Kitchen" ParentName="JFTopLayer">
+    <description>Kitchen top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Kitchen</texPath>
+      <color>(255, 255, 255)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Kitchen</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Kitchen">
+    <defName>JFTopLayer_Kitchen_Small</defName>
+    <label>Kitchen top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Kitchen">
+    <defName>JFTopLayer_Kitchen_Medium</defName>
+    <label>Kitchen top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Kitchen">
+    <defName>JFTopLayer_Kitchen_Large</defName>
+    <label>Kitchen top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Oda" ParentName="JFTopLayer">
+    <description>Oda top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Oda</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Oda</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Oda">
+    <defName>JFTopLayer_Oda_Small</defName>
+    <label>Oda top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Oda">
+    <defName>JFTopLayer_Oda_Medium</defName>
+    <label>Oda top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Oda">
+    <defName>JFTopLayer_Oda_Large</defName>
+    <label>Oda top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Pray" ParentName="JFTopLayer">
+    <description>Pray top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Pray</texPath>
+      <color>(232, 190, 172)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Pray</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Pray">
+    <defName>JFTopLayer_Pray_Small</defName>
+    <label>Pray top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Pray">
+    <defName>JFTopLayer_Pray_Medium</defName>
+    <label>Pray top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Pray">
+    <defName>JFTopLayer_Pray_Large</defName>
+    <label>Pray top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Radiation" ParentName="JFTopLayer">
+    <description>Radiation top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Radiation</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Radiation</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Radiation">
+    <defName>JFTopLayer_Radiation_Small</defName>
+    <label>Radiation top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Radiation">
+    <defName>JFTopLayer_Radiation_Medium</defName>
+    <label>Radiation top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Radiation">
+    <defName>JFTopLayer_Radiation_Large</defName>
+    <label>Radiation top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Recreation" ParentName="JFTopLayer">
+    <description>Recreation top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Recreation</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Recreation</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Recreation">
+    <defName>JFTopLayer_Recreation_Small</defName>
+    <label>Recreation top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Recreation">
+    <defName>JFTopLayer_Recreation_Medium</defName>
+    <label>Recreation top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Recreation">
+    <defName>JFTopLayer_Recreation_Large</defName>
+    <label>Recreation top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Skull" ParentName="JFTopLayer">
+    <description>Skull top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Skull</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Skull</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Skull">
+    <defName>JFTopLayer_Skull_Small</defName>
+    <label>Skull top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Skull">
+    <defName>JFTopLayer_Skull_Medium</defName>
+    <label>Skull top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Skull">
+    <defName>JFTopLayer_Skull_Large</defName>
+    <label>Skull top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Tokugawa" ParentName="JFTopLayer">
+    <description>Tokugawa top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Tokugawa</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Tokugawa</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Tokugawa">
+    <defName>JFTopLayer_Tokugawa_Small</defName>
+    <label>Tokugawa top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Tokugawa">
+    <defName>JFTopLayer_Tokugawa_Medium</defName>
+    <label>Tokugawa top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Tokugawa">
+    <defName>JFTopLayer_Tokugawa_Large</defName>
+    <label>Tokugawa top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Toxic" ParentName="JFTopLayer">
+    <description>Toxic top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Toxic</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Toxic</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Toxic">
+    <defName>JFTopLayer_Toxic_Small</defName>
+    <label>Toxic top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Toxic">
+    <defName>JFTopLayer_Toxic_Medium</defName>
+    <label>Toxic top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Toxic">
+    <defName>JFTopLayer_Toxic_Large</defName>
+    <label>Toxic top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Cow" ParentName="JFTopLayer">
+    <description>Cow top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Cow</texPath>
+      <color>(255, 255, 255)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Cow</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Cow">
+    <defName>JFTopLayer_Cow_Small</defName>
+    <label>Cow top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Cow">
+    <defName>JFTopLayer_Cow_Medium</defName>
+    <label>Cow top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Cow">
+    <defName>JFTopLayer_Cow_Large</defName>
+    <label>Cow top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Horse" ParentName="JFTopLayer">
+    <description>Horse top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Horse</texPath>
+      <color>(193, 152, 116)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Horse</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Horse">
+    <defName>JFTopLayer_Horse_Small</defName>
+    <label>Horse top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Horse">
+    <defName>JFTopLayer_Horse_Medium</defName>
+    <label>Horse top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Horse">
+    <defName>JFTopLayer_Horse_Large</defName>
+    <label>Horse top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Wheat" ParentName="JFTopLayer">
+    <description>Wheat top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Wheat</texPath>
+      <color>(248, 167, 32)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Wheat</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Wheat">
+    <defName>JFTopLayer_Wheat_Small</defName>
+    <label>Wheat top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Wheat">
+    <defName>JFTopLayer_Wheat_Medium</defName>
+    <label>Wheat top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Wheat">
+    <defName>JFTopLayer_Wheat_Large</defName>
+    <label>Wheat top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Atom" ParentName="JFTopLayer">
+    <description>Atom top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Atom</texPath>
+      <color>(210, 75, 0)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Atom</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Atom">
+    <defName>JFTopLayer_Atom_Small</defName>
+    <label>Atom top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Atom">
+    <defName>JFTopLayer_Atom_Medium</defName>
+    <label>Atom top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Atom">
+    <defName>JFTopLayer_Atom_Large</defName>
+    <label>Atom top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Coin" ParentName="JFTopLayer">
+    <description>Coin top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Coin</texPath>
+      <color>(202, 149, 103)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Coin</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Coin">
+    <defName>JFTopLayer_Coin_Small</defName>
+    <label>Coin top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Coin">
+    <defName>JFTopLayer_Coin_Medium</defName>
+    <label>Coin top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Coin">
+    <defName>JFTopLayer_Coin_Large</defName>
+    <label>Coin top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Education" ParentName="JFTopLayer">
+    <description>Education top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Education</texPath>
+      <color>(248, 204, 66)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Education</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Education">
+    <defName>JFTopLayer_Education_Small</defName>
+    <label>Education top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Education">
+    <defName>JFTopLayer_Education_Medium</defName>
+    <label>Education top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Education">
+    <defName>JFTopLayer_Education_Large</defName>
+    <label>Education top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Forge" ParentName="JFTopLayer">
+    <description>Forge top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Forge</texPath>
+      <color>(199, 5, 1)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Forge</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Forge">
+    <defName>JFTopLayer_Forge_Small</defName>
+    <label>Forge top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Forge">
+    <defName>JFTopLayer_Forge_Medium</defName>
+    <label>Forge top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Forge">
+    <defName>JFTopLayer_Forge_Large</defName>
+    <label>Forge top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Gun" ParentName="JFTopLayer">
+    <description>Gun top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Gun</texPath>
+      <color>(48, 45, 46)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Gun</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Gun">
+    <defName>JFTopLayer_Gun_Small</defName>
+    <label>Gun top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Gun">
+    <defName>JFTopLayer_Gun_Medium</defName>
+    <label>Gun top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Gun">
+    <defName>JFTopLayer_Gun_Large</defName>
+    <label>Gun top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Jail" ParentName="JFTopLayer">
+    <description>Jail top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Jail</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Jail</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Jail">
+    <defName>JFTopLayer_Jail_Small</defName>
+    <label>Jail top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Jail">
+    <defName>JFTopLayer_Jail_Medium</defName>
+    <label>Jail top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Jail">
+    <defName>JFTopLayer_Jail_Large</defName>
+    <label>Jail top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Mechanical" ParentName="JFTopLayer">
+    <description>Mechanical top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Mechanical</texPath>
+      <color>(232, 76, 61)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Mechanical</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Mechanical">
+    <defName>JFTopLayer_Mechanical_Small</defName>
+    <label>Mechanical top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Mechanical">
+    <defName>JFTopLayer_Mechanical_Medium</defName>
+    <label>Mechanical top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Mechanical">
+    <defName>JFTopLayer_Mechanical_Large</defName>
+    <label>Mechanical top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Robot" ParentName="JFTopLayer">
+    <description>Robot top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Robot</texPath>
+      <color>(0, 255, 255)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Robot</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Robot">
+    <defName>JFTopLayer_Robot_Small</defName>
+    <label>Robot top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Robot">
+    <defName>JFTopLayer_Robot_Medium</defName>
+    <label>Robot top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Robot">
+    <defName>JFTopLayer_Robot_Large</defName>
+    <label>Robot top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Science" ParentName="JFTopLayer">
+    <description>Science top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Science</texPath>
+      <color>(80, 177, 251)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Science</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Science">
+    <defName>JFTopLayer_Science_Small</defName>
+    <label>Science top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Science">
+    <defName>JFTopLayer_Science_Medium</defName>
+    <label>Science top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Science">
+    <defName>JFTopLayer_Science_Large</defName>
+    <label>Science top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Textile" ParentName="JFTopLayer">
+    <description>Textile top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Textile</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Textile</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Textile">
+    <defName>JFTopLayer_Textile_Small</defName>
+    <label>Textile top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Textile">
+    <defName>JFTopLayer_Textile_Medium</defName>
+    <label>Textile top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Textile">
+    <defName>JFTopLayer_Textile_Large</defName>
+    <label>Textile top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Caduceus" ParentName="JFTopLayer">
+    <description>Caduceus top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Caduceus</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Caduceus</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Caduceus">
+    <defName>JFTopLayer_Caduceus_Small</defName>
+    <label>Caduceus top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Caduceus">
+    <defName>JFTopLayer_Caduceus_Medium</defName>
+    <label>Caduceus top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Caduceus">
+    <defName>JFTopLayer_Caduceus_Large</defName>
+    <label>Caduceus top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_RodOfAsclepius" ParentName="JFTopLayer">
+    <description>Rod of Asclepius top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/RodOfAsclepius</texPath>
+      <color>(232, 235, 241)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/RodOfAsclepius</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_RodOfAsclepius">
+    <defName>JFTopLayer_RodOfAsclepius_Small</defName>
+    <label>Rod of Asclepius top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RodOfAsclepius">
+    <defName>JFTopLayer_RodOfAsclepius_Medium</defName>
+    <label>Rod of Asclepius top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_RodOfAsclepius">
+    <defName>JFTopLayer_RodOfAsclepius_Large</defName>
+    <label>Rod of Asclepius top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_CrossA" ParentName="JFTopLayer">
+    <description>Cross top layer A.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/CrossA</texPath>
+      <color>(244, 195, 22)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/CrossA</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_CrossA">
+    <defName>JFTopLayer_CrossA_Small</defName>
+    <label>Cross top layer A (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossA">
+    <defName>JFTopLayer_CrossA_Medium</defName>
+    <label>Cross top layer A (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossA">
+    <defName>JFTopLayer_CrossA_Large</defName>
+    <label>Cross top layer A (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_CrossB" ParentName="JFTopLayer">
+    <description>Cross top layer B.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/CrossB</texPath>
+      <color>(244, 195, 22)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/CrossB</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_CrossB">
+    <defName>JFTopLayer_CrossB_Small</defName>
+    <label>Cross top layer B (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossB">
+    <defName>JFTopLayer_CrossB_Medium</defName>
+    <label>Cross top layer B (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossB">
+    <defName>JFTopLayer_CrossB_Large</defName>
+    <label>Cross top layer B (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_CrossC" ParentName="JFTopLayer">
+    <description>Cross top layer C.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/CrossC</texPath>
+      <color>(244, 195, 22)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/CrossC</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_CrossC">
+    <defName>JFTopLayer_CrossC_Small</defName>
+    <label>Cross top layer C (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossC">
+    <defName>JFTopLayer_CrossC_Medium</defName>
+    <label>Cross top layer C (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_CrossC">
+    <defName>JFTopLayer_CrossC_Large</defName>
+    <label>Cross top layer C (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_FleurDeLis" ParentName="JFTopLayer">
+    <description>Fleur-de-lis top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/FleurDeLis</texPath>
+      <color>(244, 195, 22)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/FleurDeLis</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_FleurDeLis">
+    <defName>JFTopLayer_FleurDeLis_Small</defName>
+    <label>Fleur-de-lis top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_FleurDeLis">
+    <defName>JFTopLayer_FleurDeLis_Medium</defName>
+    <label>Fleur-de-lis top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_FleurDeLis">
+    <defName>JFTopLayer_FleurDeLis_Large</defName>
+    <label>Fleur-de-lis top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFTopLayer_Rimworld" ParentName="JFTopLayer">
+    <description>Rimworld top layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/TopLayer/Rimworld</texPath>
+      <color>(244, 195, 22)</color>
+    </graphicData>
+    <uiIconPath>Icons/TopLayer/Rimworld</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFTopLayer_Rimworld">
+    <defName>JFTopLayer_Rimworld_Small</defName>
+    <label>Rimworld top layer (small)</label>
+    <designatorDropdown>TopLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Rimworld">
+    <defName>JFTopLayer_Rimworld_Medium</defName>
+    <label>Rimworld top layer (medium)</label>
+    <designatorDropdown>TopLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFTopLayer_Rimworld">
+    <defName>JFTopLayer_Rimworld_Large</defName>
+    <label>Rimworld top layer (large)</label>
+    <designatorDropdown>TopLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+</Defs>

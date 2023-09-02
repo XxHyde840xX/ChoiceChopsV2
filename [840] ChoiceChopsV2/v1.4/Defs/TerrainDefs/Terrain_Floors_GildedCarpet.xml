@@ -1,0 +1,1849 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Type ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <description>Gilded carpet with complex patterns. A perfect choice for satisfying your ego, or perhaps vanity.</description>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <Cloth>15</Cloth>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>5</Beauty>
+      <Flammability>0.32</Flammability>
+      <WorkToBuild>2000</WorkToBuild>
+      <CleaningTimeFactor>2</CleaningTimeFactor>
+    </statBases>
+    <fertility>0</fertility>
+    <designationCategory>Floors</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <burnedDef>BurnedCarpet</burnedDef>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <renderPrecedence>200</renderPrecedence>
+    <uiOrder>2116</uiOrder>
+  </TerrainDef>
+
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_StarInSquare" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_StarInSquare</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_VanillaA</defName>
+    <label>Gilded star-in-square carpet (vanilla A)</label>
+    <texturePath>Floors/StarInSquare/VanillaA</texturePath>
+    <uiIconPath>Icons/StarInSquare/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_VanillaB</defName>
+    <label>Gilded star-in-square carpet (vanilla B)</label>
+    <texturePath>Floors/StarInSquare/VanillaB</texturePath>
+    <uiIconPath>Icons/StarInSquare/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_VanillaC</defName>
+    <label>Gilded star-in-square carpet (vanilla C)</label>
+    <texturePath>Floors/StarInSquare/VanillaC</texturePath>
+    <uiIconPath>Icons/StarInSquare/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_VanillaD</defName>
+    <label>Gilded star-in-square carpet (vanilla D)</label>
+    <texturePath>Floors/StarInSquare/VanillaD</texturePath>
+    <uiIconPath>Icons/StarInSquare/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Red</defName>
+    <label>Gilded star-in-square carpet (red)</label>
+    <texturePath>Floors/StarInSquare/Red</texturePath>
+    <uiIconPath>Icons/StarInSquare/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Scarlet</defName>
+    <label>Gilded star-in-square carpet (scarlet)</label>
+    <texturePath>Floors/StarInSquare/Scarlet</texturePath>
+    <uiIconPath>Icons/StarInSquare/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Burgundy</defName>
+    <label>Gilded star-in-square carpet (burgundy)</label>
+    <texturePath>Floors/StarInSquare/Burgundy</texturePath>
+    <uiIconPath>Icons/StarInSquare/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Magenta</defName>
+    <label>Gilded star-in-square carpet (magenta)</label>
+    <texturePath>Floors/StarInSquare/Magenta</texturePath>
+    <uiIconPath>Icons/StarInSquare/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Purple</defName>
+    <label>Gilded star-in-square carpet (purple)</label>
+    <texturePath>Floors/StarInSquare/Purple</texturePath>
+    <uiIconPath>Icons/StarInSquare/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Indigo</defName>
+    <label>Gilded star-in-square carpet (indigo)</label>
+    <texturePath>Floors/StarInSquare/Indigo</texturePath>
+    <uiIconPath>Icons/StarInSquare/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Blue</defName>
+    <label>Gilded star-in-square carpet (blue)</label>
+    <texturePath>Floors/StarInSquare/Blue</texturePath>
+    <uiIconPath>Icons/StarInSquare/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Teal</defName>
+    <label>Gilded star-in-square carpet (teal)</label>
+    <texturePath>Floors/StarInSquare/Teal</texturePath>
+    <uiIconPath>Icons/StarInSquare/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Green</defName>
+    <label>Gilded star-in-square carpet (green)</label>
+    <texturePath>Floors/StarInSquare/Green</texturePath>
+    <uiIconPath>Icons/StarInSquare/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Olive</defName>
+    <label>Gilded star-in-square carpet (olive)</label>
+    <texturePath>Floors/StarInSquare/Olive</texturePath>
+    <uiIconPath>Icons/StarInSquare/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInSquare">
+    <defName>JFGeometricFloors_GildedCarpet_StarInSquare_Cream</defName>
+    <label>Gilded star-in-square carpet (cream)</label>
+    <texturePath>Floors/StarInSquare/Cream</texturePath>
+    <uiIconPath>Icons/StarInSquare/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_StarInCircle" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_StarInCircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_VanillaA</defName>
+    <label>Gilded star-in-circle carpet (vanilla A)</label>
+    <texturePath>Floors/StarInCircle/VanillaA</texturePath>
+    <uiIconPath>Icons/StarInCircle/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_VanillaB</defName>
+    <label>Gilded star-in-circle carpet (vanilla B)</label>
+    <texturePath>Floors/StarInCircle/VanillaB</texturePath>
+    <uiIconPath>Icons/StarInCircle/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_VanillaC</defName>
+    <label>Gilded star-in-circle carpet (vanilla C)</label>
+    <texturePath>Floors/StarInCircle/VanillaC</texturePath>
+    <uiIconPath>Icons/StarInCircle/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_VanillaD</defName>
+    <label>Gilded star-in-circle carpet (vanilla D)</label>
+    <texturePath>Floors/StarInCircle/VanillaD</texturePath>
+    <uiIconPath>Icons/StarInCircle/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Red</defName>
+    <label>Gilded star-in-circle carpet (red)</label>
+    <texturePath>Floors/StarInCircle/Red</texturePath>
+    <uiIconPath>Icons/StarInCircle/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Scarlet</defName>
+    <label>Gilded star-in-circle carpet (scarlet)</label>
+    <texturePath>Floors/StarInCircle/Scarlet</texturePath>
+    <uiIconPath>Icons/StarInCircle/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Burgundy</defName>
+    <label>Gilded star-in-circle carpet (burgundy)</label>
+    <texturePath>Floors/StarInCircle/Burgundy</texturePath>
+    <uiIconPath>Icons/StarInCircle/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Magenta</defName>
+    <label>Gilded star-in-circle carpet (magenta)</label>
+    <texturePath>Floors/StarInCircle/Magenta</texturePath>
+    <uiIconPath>Icons/StarInCircle/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Purple</defName>
+    <label>Gilded star-in-circle carpet (purple)</label>
+    <texturePath>Floors/StarInCircle/Purple</texturePath>
+    <uiIconPath>Icons/StarInCircle/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Indigo</defName>
+    <label>Gilded star-in-circle carpet (indigo)</label>
+    <texturePath>Floors/StarInCircle/Indigo</texturePath>
+    <uiIconPath>Icons/StarInCircle/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Blue</defName>
+    <label>Gilded star-in-circle carpet (blue)</label>
+    <texturePath>Floors/StarInCircle/Blue</texturePath>
+    <uiIconPath>Icons/StarInCircle/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Teal</defName>
+    <label>Gilded star-in-circle carpet (teal)</label>
+    <texturePath>Floors/StarInCircle/Teal</texturePath>
+    <uiIconPath>Icons/StarInCircle/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Green</defName>
+    <label>Gilded star-in-circle carpet (green)</label>
+    <texturePath>Floors/StarInCircle/Green</texturePath>
+    <uiIconPath>Icons/StarInCircle/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Olive</defName>
+    <label>Gilded star-in-circle carpet (olive)</label>
+    <texturePath>Floors/StarInCircle/Olive</texturePath>
+    <uiIconPath>Icons/StarInCircle/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_StarInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_StarInCircle_Cream</defName>
+    <label>Gilded star-in-circle carpet (cream)</label>
+    <texturePath>Floors/StarInCircle/Cream</texturePath>
+    <uiIconPath>Icons/StarInCircle/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_RibbonAndStar" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_RibbonAndStar</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_VanillaA</defName>
+    <label>Gilded ribbon-and-star carpet (vanilla A)</label>
+    <texturePath>Floors/RibbonAndStar/VanillaA</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_VanillaB</defName>
+    <label>Gilded ribbon-and-star carpet (vanilla B)</label>
+    <texturePath>Floors/RibbonAndStar/VanillaB</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_VanillaC</defName>
+    <label>Gilded ribbon-and-star carpet (vanilla C)</label>
+    <texturePath>Floors/RibbonAndStar/VanillaC</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_VanillaD</defName>
+    <label>Gilded ribbon-and-star carpet (vanilla D)</label>
+    <texturePath>Floors/RibbonAndStar/VanillaD</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Red</defName>
+    <label>Gilded ribbon-and-star carpet (red)</label>
+    <texturePath>Floors/RibbonAndStar/Red</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Scarlet</defName>
+    <label>Gilded ribbon-and-star carpet (scarlet)</label>
+    <texturePath>Floors/RibbonAndStar/Scarlet</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Burgundy</defName>
+    <label>Gilded ribbon-and-star carpet (burgundy)</label>
+    <texturePath>Floors/RibbonAndStar/Burgundy</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Magenta</defName>
+    <label>Gilded ribbon-and-star carpet (magenta)</label>
+    <texturePath>Floors/RibbonAndStar/Magenta</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Purple</defName>
+    <label>Gilded ribbon-and-star carpet (purple)</label>
+    <texturePath>Floors/RibbonAndStar/Purple</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Indigo</defName>
+    <label>Gilded ribbon-and-star carpet (indigo)</label>
+    <texturePath>Floors/RibbonAndStar/Indigo</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Blue</defName>
+    <label>Gilded ribbon-and-star carpet (blue)</label>
+    <texturePath>Floors/RibbonAndStar/Blue</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Teal</defName>
+    <label>Gilded ribbon-and-star carpet (teal)</label>
+    <texturePath>Floors/RibbonAndStar/Teal</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Green</defName>
+    <label>Gilded ribbon-and-star carpet (green)</label>
+    <texturePath>Floors/RibbonAndStar/Green</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Olive</defName>
+    <label>Gilded ribbon-and-star carpet (olive)</label>
+    <texturePath>Floors/RibbonAndStar/Olive</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedCarpet_RibbonAndStar_Cream</defName>
+    <label>Gilded ribbon-and-star carpet (cream)</label>
+    <texturePath>Floors/RibbonAndStar/Cream</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_PeacockFeather" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_PeacockFeather</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_VanillaA</defName>
+    <label>Gilded peacock feather carpet (vanilla A)</label>
+    <texturePath>Floors/PeacockFeather/VanillaA</texturePath>
+    <uiIconPath>Icons/PeacockFeather/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_VanillaB</defName>
+    <label>Gilded peacock feather carpet (vanilla B)</label>
+    <texturePath>Floors/PeacockFeather/VanillaB</texturePath>
+    <uiIconPath>Icons/PeacockFeather/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_VanillaC</defName>
+    <label>Gilded peacock feather carpet (vanilla C)</label>
+    <texturePath>Floors/PeacockFeather/VanillaC</texturePath>
+    <uiIconPath>Icons/PeacockFeather/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_VanillaD</defName>
+    <label>Gilded peacock feather carpet (vanilla D)</label>
+    <texturePath>Floors/PeacockFeather/VanillaD</texturePath>
+    <uiIconPath>Icons/PeacockFeather/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Red</defName>
+    <label>Gilded peacock feather carpet (red)</label>
+    <texturePath>Floors/PeacockFeather/Red</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Scarlet</defName>
+    <label>Gilded peacock feather carpet (scarlet)</label>
+    <texturePath>Floors/PeacockFeather/Scarlet</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Burgundy</defName>
+    <label>Gilded peacock feather carpet (burgundy)</label>
+    <texturePath>Floors/PeacockFeather/Burgundy</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Magenta</defName>
+    <label>Gilded peacock feather carpet (magenta)</label>
+    <texturePath>Floors/PeacockFeather/Magenta</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Purple</defName>
+    <label>Gilded peacock feather carpet (purple)</label>
+    <texturePath>Floors/PeacockFeather/Purple</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Indigo</defName>
+    <label>Gilded peacock feather carpet (indigo)</label>
+    <texturePath>Floors/PeacockFeather/Indigo</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Blue</defName>
+    <label>Gilded peacock feather carpet (blue)</label>
+    <texturePath>Floors/PeacockFeather/Blue</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Teal</defName>
+    <label>Gilded peacock feather carpet (teal)</label>
+    <texturePath>Floors/PeacockFeather/Teal</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Green</defName>
+    <label>Gilded peacock feather carpet (green)</label>
+    <texturePath>Floors/PeacockFeather/Green</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Olive</defName>
+    <label>Gilded peacock feather carpet (olive)</label>
+    <texturePath>Floors/PeacockFeather/Olive</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_PeacockFeather">
+    <defName>JFGeometricFloors_GildedCarpet_PeacockFeather_Cream</defName>
+    <label>Gilded peacock feather carpet (cream)</label>
+    <texturePath>Floors/PeacockFeather/Cream</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_Squircle" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_Squircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_VanillaA</defName>
+    <label>Gilded squircle carpet (vanilla A)</label>
+    <texturePath>Floors/Squircle/VanillaA</texturePath>
+    <uiIconPath>Icons/Squircle/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_VanillaB</defName>
+    <label>Gilded squircle carpet (vanilla B)</label>
+    <texturePath>Floors/Squircle/VanillaB</texturePath>
+    <uiIconPath>Icons/Squircle/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_VanillaC</defName>
+    <label>Gilded squircle carpet (vanilla C)</label>
+    <texturePath>Floors/Squircle/VanillaC</texturePath>
+    <uiIconPath>Icons/Squircle/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_VanillaD</defName>
+    <label>Gilded squircle carpet (vanilla D)</label>
+    <texturePath>Floors/Squircle/VanillaD</texturePath>
+    <uiIconPath>Icons/Squircle/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Red</defName>
+    <label>Gilded squircle carpet (red)</label>
+    <texturePath>Floors/Squircle/Red</texturePath>
+    <uiIconPath>Icons/Squircle/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Scarlet</defName>
+    <label>Gilded squircle carpet (scarlet)</label>
+    <texturePath>Floors/Squircle/Scarlet</texturePath>
+    <uiIconPath>Icons/Squircle/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Burgundy</defName>
+    <label>Gilded squircle carpet (burgundy)</label>
+    <texturePath>Floors/Squircle/Burgundy</texturePath>
+    <uiIconPath>Icons/Squircle/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Magenta</defName>
+    <label>Gilded squircle carpet (magenta)</label>
+    <texturePath>Floors/Squircle/Magenta</texturePath>
+    <uiIconPath>Icons/Squircle/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Purple</defName>
+    <label>Gilded squircle carpet (purple)</label>
+    <texturePath>Floors/Squircle/Purple</texturePath>
+    <uiIconPath>Icons/Squircle/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Indigo</defName>
+    <label>Gilded squircle carpet (indigo)</label>
+    <texturePath>Floors/Squircle/Indigo</texturePath>
+    <uiIconPath>Icons/Squircle/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Blue</defName>
+    <label>Gilded squircle carpet (blue)</label>
+    <texturePath>Floors/Squircle/Blue</texturePath>
+    <uiIconPath>Icons/Squircle/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Teal</defName>
+    <label>Gilded squircle carpet (teal)</label>
+    <texturePath>Floors/Squircle/Teal</texturePath>
+    <uiIconPath>Icons/Squircle/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Green</defName>
+    <label>Gilded squircle carpet (green)</label>
+    <texturePath>Floors/Squircle/Green</texturePath>
+    <uiIconPath>Icons/Squircle/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Olive</defName>
+    <label>Gilded squircle carpet (olive)</label>
+    <texturePath>Floors/Squircle/Olive</texturePath>
+    <uiIconPath>Icons/Squircle/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Squircle">
+    <defName>JFGeometricFloors_GildedCarpet_Squircle_Cream</defName>
+    <label>Gilded squircle carpet (cream)</label>
+    <texturePath>Floors/Squircle/Cream</texturePath>
+    <uiIconPath>Icons/Squircle/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FlowerInCircle" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FlowerInCircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_VanillaA</defName>
+    <label>Gilded flower-in-circle carpet (vanilla A)</label>
+    <texturePath>Floors/FlowerInCircle/VanillaA</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_VanillaB</defName>
+    <label>Gilded flower-in-circle carpet (vanilla B)</label>
+    <texturePath>Floors/FlowerInCircle/VanillaB</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_VanillaC</defName>
+    <label>Gilded flower-in-circle carpet (vanilla C)</label>
+    <texturePath>Floors/FlowerInCircle/VanillaC</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_VanillaD</defName>
+    <label>Gilded flower-in-circle carpet (vanilla D)</label>
+    <texturePath>Floors/FlowerInCircle/VanillaD</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Red</defName>
+    <label>Gilded flower-in-circle carpet (red)</label>
+    <texturePath>Floors/FlowerInCircle/Red</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Scarlet</defName>
+    <label>Gilded flower-in-circle carpet (scarlet)</label>
+    <texturePath>Floors/FlowerInCircle/Scarlet</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Burgundy</defName>
+    <label>Gilded flower-in-circle carpet (burgundy)</label>
+    <texturePath>Floors/FlowerInCircle/Burgundy</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Magenta</defName>
+    <label>Gilded flower-in-circle carpet (magenta)</label>
+    <texturePath>Floors/FlowerInCircle/Magenta</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Purple</defName>
+    <label>Gilded flower-in-circle carpet (purple)</label>
+    <texturePath>Floors/FlowerInCircle/Purple</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Indigo</defName>
+    <label>Gilded flower-in-circle carpet (indigo)</label>
+    <texturePath>Floors/FlowerInCircle/Indigo</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Blue</defName>
+    <label>Gilded flower-in-circle carpet (blue)</label>
+    <texturePath>Floors/FlowerInCircle/Blue</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Teal</defName>
+    <label>Gilded flower-in-circle carpet (teal)</label>
+    <texturePath>Floors/FlowerInCircle/Teal</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Green</defName>
+    <label>Gilded flower-in-circle carpet (green)</label>
+    <texturePath>Floors/FlowerInCircle/Green</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Olive</defName>
+    <label>Gilded flower-in-circle carpet (olive)</label>
+    <texturePath>Floors/FlowerInCircle/Olive</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedCarpet_FlowerInCircle_Cream</defName>
+    <label>Gilded flower-in-circle carpet (cream)</label>
+    <texturePath>Floors/FlowerInCircle/Cream</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FishScaleA" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FishScaleA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_VanillaA</defName>
+    <label>Gilded fish scale carpet A (vanilla A)</label>
+    <texturePath>Floors/FishScaleA/VanillaA</texturePath>
+    <uiIconPath>Icons/FishScaleA/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_VanillaB</defName>
+    <label>Gilded fish scale carpet A (vanilla B)</label>
+    <texturePath>Floors/FishScaleA/VanillaB</texturePath>
+    <uiIconPath>Icons/FishScaleA/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_VanillaC</defName>
+    <label>Gilded fish scale carpet A (vanilla C)</label>
+    <texturePath>Floors/FishScaleA/VanillaC</texturePath>
+    <uiIconPath>Icons/FishScaleA/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_VanillaD</defName>
+    <label>Gilded fish scale carpet A (vanilla D)</label>
+    <texturePath>Floors/FishScaleA/VanillaD</texturePath>
+    <uiIconPath>Icons/FishScaleA/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Red</defName>
+    <label>Gilded fish scale carpet A (red)</label>
+    <texturePath>Floors/FishScaleA/Red</texturePath>
+    <uiIconPath>Icons/FishScaleA/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Scarlet</defName>
+    <label>Gilded fish scale carpet A (scarlet)</label>
+    <texturePath>Floors/FishScaleA/Scarlet</texturePath>
+    <uiIconPath>Icons/FishScaleA/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Burgundy</defName>
+    <label>Gilded fish scale carpet A (burgundy)</label>
+    <texturePath>Floors/FishScaleA/Burgundy</texturePath>
+    <uiIconPath>Icons/FishScaleA/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Magenta</defName>
+    <label>Gilded fish scale carpet A (magenta)</label>
+    <texturePath>Floors/FishScaleA/Magenta</texturePath>
+    <uiIconPath>Icons/FishScaleA/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Purple</defName>
+    <label>Gilded fish scale carpet A (purple)</label>
+    <texturePath>Floors/FishScaleA/Purple</texturePath>
+    <uiIconPath>Icons/FishScaleA/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Indigo</defName>
+    <label>Gilded fish scale carpet A (indigo)</label>
+    <texturePath>Floors/FishScaleA/Indigo</texturePath>
+    <uiIconPath>Icons/FishScaleA/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Blue</defName>
+    <label>Gilded fish scale carpet A (blue)</label>
+    <texturePath>Floors/FishScaleA/Blue</texturePath>
+    <uiIconPath>Icons/FishScaleA/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Teal</defName>
+    <label>Gilded fish scale carpet A (teal)</label>
+    <texturePath>Floors/FishScaleA/Teal</texturePath>
+    <uiIconPath>Icons/FishScaleA/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Green</defName>
+    <label>Gilded fish scale carpet A (green)</label>
+    <texturePath>Floors/FishScaleA/Green</texturePath>
+    <uiIconPath>Icons/FishScaleA/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Olive</defName>
+    <label>Gilded fish scale carpet A (olive)</label>
+    <texturePath>Floors/FishScaleA/Olive</texturePath>
+    <uiIconPath>Icons/FishScaleA/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleA">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleA_Cream</defName>
+    <label>Gilded fish scale carpet A (cream)</label>
+    <texturePath>Floors/FishScaleA/Cream</texturePath>
+    <uiIconPath>Icons/FishScaleA/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FishScaleB" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FishScaleB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_VanillaA</defName>
+    <label>Gilded fish scale carpet B (vanilla A)</label>
+    <texturePath>Floors/FishScaleB/VanillaA</texturePath>
+    <uiIconPath>Icons/FishScaleB/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_VanillaB</defName>
+    <label>Gilded fish scale carpet B (vanilla B)</label>
+    <texturePath>Floors/FishScaleB/VanillaB</texturePath>
+    <uiIconPath>Icons/FishScaleB/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_VanillaC</defName>
+    <label>Gilded fish scale carpet B (vanilla C)</label>
+    <texturePath>Floors/FishScaleB/VanillaC</texturePath>
+    <uiIconPath>Icons/FishScaleB/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_VanillaD</defName>
+    <label>Gilded fish scale carpet B (vanilla D)</label>
+    <texturePath>Floors/FishScaleB/VanillaD</texturePath>
+    <uiIconPath>Icons/FishScaleB/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Red</defName>
+    <label>Gilded fish scale carpet B (red)</label>
+    <texturePath>Floors/FishScaleB/Red</texturePath>
+    <uiIconPath>Icons/FishScaleB/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Scarlet</defName>
+    <label>Gilded fish scale carpet B (scarlet)</label>
+    <texturePath>Floors/FishScaleB/Scarlet</texturePath>
+    <uiIconPath>Icons/FishScaleB/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Burgundy</defName>
+    <label>Gilded fish scale carpet B (burgundy)</label>
+    <texturePath>Floors/FishScaleB/Burgundy</texturePath>
+    <uiIconPath>Icons/FishScaleB/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Magenta</defName>
+    <label>Gilded fish scale carpet B (magenta)</label>
+    <texturePath>Floors/FishScaleB/Magenta</texturePath>
+    <uiIconPath>Icons/FishScaleB/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Purple</defName>
+    <label>Gilded fish scale carpet B (purple)</label>
+    <texturePath>Floors/FishScaleB/Purple</texturePath>
+    <uiIconPath>Icons/FishScaleB/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Indigo</defName>
+    <label>Gilded fish scale carpet B (indigo)</label>
+    <texturePath>Floors/FishScaleB/Indigo</texturePath>
+    <uiIconPath>Icons/FishScaleB/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Blue</defName>
+    <label>Gilded fish scale carpet B (blue)</label>
+    <texturePath>Floors/FishScaleB/Blue</texturePath>
+    <uiIconPath>Icons/FishScaleB/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Teal</defName>
+    <label>Gilded fish scale carpet B (teal)</label>
+    <texturePath>Floors/FishScaleB/Teal</texturePath>
+    <uiIconPath>Icons/FishScaleB/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Green</defName>
+    <label>Gilded fish scale carpet B (green)</label>
+    <texturePath>Floors/FishScaleB/Green</texturePath>
+    <uiIconPath>Icons/FishScaleB/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Olive</defName>
+    <label>Gilded fish scale carpet B (olive)</label>
+    <texturePath>Floors/FishScaleB/Olive</texturePath>
+    <uiIconPath>Icons/FishScaleB/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FishScaleB">
+    <defName>JFGeometricFloors_GildedCarpet_FishScaleB_Cream</defName>
+    <label>Gilded fish scale carpet B (cream)</label>
+    <texturePath>Floors/FishScaleB/Cream</texturePath>
+    <uiIconPath>Icons/FishScaleB/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FleurDeLisA" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FleurDeLisA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_VanillaA</defName>
+    <label>Gilded fleur-de-lis carpet A (vanilla A)</label>
+    <texturePath>Floors/FleurDeLisA/VanillaA</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_VanillaB</defName>
+    <label>Gilded fleur-de-lis carpet A (vanilla B)</label>
+    <texturePath>Floors/FleurDeLisA/VanillaB</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_VanillaC</defName>
+    <label>Gilded fleur-de-lis carpet A (vanilla C)</label>
+    <texturePath>Floors/FleurDeLisA/VanillaC</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_VanillaD</defName>
+    <label>Gilded fleur-de-lis carpet A (vanilla D)</label>
+    <texturePath>Floors/FleurDeLisA/VanillaD</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Red</defName>
+    <label>Gilded fleur-de-lis carpet A (red)</label>
+    <texturePath>Floors/FleurDeLisA/Red</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Scarlet</defName>
+    <label>Gilded fleur-de-lis carpet A (scarlet)</label>
+    <texturePath>Floors/FleurDeLisA/Scarlet</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Burgundy</defName>
+    <label>Gilded fleur-de-lis carpet A (burgundy)</label>
+    <texturePath>Floors/FleurDeLisA/Burgundy</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Magenta</defName>
+    <label>Gilded fleur-de-lis carpet A (magenta)</label>
+    <texturePath>Floors/FleurDeLisA/Magenta</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Purple</defName>
+    <label>Gilded fleur-de-lis carpet A (purple)</label>
+    <texturePath>Floors/FleurDeLisA/Purple</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Indigo</defName>
+    <label>Gilded fleur-de-lis carpet A (indigo)</label>
+    <texturePath>Floors/FleurDeLisA/Indigo</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Blue</defName>
+    <label>Gilded fleur-de-lis carpet A (blue)</label>
+    <texturePath>Floors/FleurDeLisA/Blue</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Teal</defName>
+    <label>Gilded fleur-de-lis carpet A (teal)</label>
+    <texturePath>Floors/FleurDeLisA/Teal</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Green</defName>
+    <label>Gilded fleur-de-lis carpet A (green)</label>
+    <texturePath>Floors/FleurDeLisA/Green</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Olive</defName>
+    <label>Gilded fleur-de-lis carpet A (olive)</label>
+    <texturePath>Floors/FleurDeLisA/Olive</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisA_Cream</defName>
+    <label>Gilded fleur-de-lis carpet A (cream)</label>
+    <texturePath>Floors/FleurDeLisA/Cream</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FleurDeLisB" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FleurDeLisB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_VanillaA</defName>
+    <label>Gilded fleur-de-lis carpet B (vanilla A)</label>
+    <texturePath>Floors/FleurDeLisB/VanillaA</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_VanillaB</defName>
+    <label>Gilded fleur-de-lis carpet B (vanilla B)</label>
+    <texturePath>Floors/FleurDeLisB/VanillaB</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_VanillaC</defName>
+    <label>Gilded fleur-de-lis carpet B (vanilla C)</label>
+    <texturePath>Floors/FleurDeLisB/VanillaC</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_VanillaD</defName>
+    <label>Gilded fleur-de-lis carpet B (vanilla D)</label>
+    <texturePath>Floors/FleurDeLisB/VanillaD</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Red</defName>
+    <label>Gilded fleur-de-lis carpet B (red)</label>
+    <texturePath>Floors/FleurDeLisB/Red</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Scarlet</defName>
+    <label>Gilded fleur-de-lis carpet B (scarlet)</label>
+    <texturePath>Floors/FleurDeLisB/Scarlet</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Burgundy</defName>
+    <label>Gilded fleur-de-lis carpet B (burgundy)</label>
+    <texturePath>Floors/FleurDeLisB/Burgundy</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Magenta</defName>
+    <label>Gilded fleur-de-lis carpet B (magenta)</label>
+    <texturePath>Floors/FleurDeLisB/Magenta</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Purple</defName>
+    <label>Gilded fleur-de-lis carpet B (purple)</label>
+    <texturePath>Floors/FleurDeLisB/Purple</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Indigo</defName>
+    <label>Gilded fleur-de-lis carpet B (indigo)</label>
+    <texturePath>Floors/FleurDeLisB/Indigo</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Blue</defName>
+    <label>Gilded fleur-de-lis carpet B (blue)</label>
+    <texturePath>Floors/FleurDeLisB/Blue</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Teal</defName>
+    <label>Gilded fleur-de-lis carpet B (teal)</label>
+    <texturePath>Floors/FleurDeLisB/Teal</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Green</defName>
+    <label>Gilded fleur-de-lis carpet B (green)</label>
+    <texturePath>Floors/FleurDeLisB/Green</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Olive</defName>
+    <label>Gilded fleur-de-lis carpet B (olive)</label>
+    <texturePath>Floors/FleurDeLisB/Olive</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedCarpet_FleurDeLisB_Cream</defName>
+    <label>Gilded fleur-de-lis carpet B (cream)</label>
+    <texturePath>Floors/FleurDeLisB/Cream</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FloralA" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FloralA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_VanillaA</defName>
+    <label>Gilded floral carpet A (vanilla A)</label>
+    <texturePath>Floors/FloralA/VanillaA</texturePath>
+    <uiIconPath>Icons/FloralA/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_VanillaB</defName>
+    <label>Gilded floral carpet A (vanilla B)</label>
+    <texturePath>Floors/FloralA/VanillaB</texturePath>
+    <uiIconPath>Icons/FloralA/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_VanillaC</defName>
+    <label>Gilded floral carpet A (vanilla C)</label>
+    <texturePath>Floors/FloralA/VanillaC</texturePath>
+    <uiIconPath>Icons/FloralA/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_VanillaD</defName>
+    <label>Gilded floral carpet A (vanilla D)</label>
+    <texturePath>Floors/FloralA/VanillaD</texturePath>
+    <uiIconPath>Icons/FloralA/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Red</defName>
+    <label>Gilded floral carpet A (red)</label>
+    <texturePath>Floors/FloralA/Red</texturePath>
+    <uiIconPath>Icons/FloralA/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Scarlet</defName>
+    <label>Gilded floral carpet A (scarlet)</label>
+    <texturePath>Floors/FloralA/Scarlet</texturePath>
+    <uiIconPath>Icons/FloralA/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Burgundy</defName>
+    <label>Gilded floral carpet A (burgundy)</label>
+    <texturePath>Floors/FloralA/Burgundy</texturePath>
+    <uiIconPath>Icons/FloralA/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Magenta</defName>
+    <label>Gilded floral carpet A (magenta)</label>
+    <texturePath>Floors/FloralA/Magenta</texturePath>
+    <uiIconPath>Icons/FloralA/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Purple</defName>
+    <label>Gilded floral carpet A (purple)</label>
+    <texturePath>Floors/FloralA/Purple</texturePath>
+    <uiIconPath>Icons/FloralA/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Indigo</defName>
+    <label>Gilded floral carpet A (indigo)</label>
+    <texturePath>Floors/FloralA/Indigo</texturePath>
+    <uiIconPath>Icons/FloralA/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Blue</defName>
+    <label>Gilded floral carpet A (blue)</label>
+    <texturePath>Floors/FloralA/Blue</texturePath>
+    <uiIconPath>Icons/FloralA/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Teal</defName>
+    <label>Gilded floral carpet A (teal)</label>
+    <texturePath>Floors/FloralA/Teal</texturePath>
+    <uiIconPath>Icons/FloralA/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Green</defName>
+    <label>Gilded floral carpet A (green)</label>
+    <texturePath>Floors/FloralA/Green</texturePath>
+    <uiIconPath>Icons/FloralA/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Olive</defName>
+    <label>Gilded floral carpet A (olive)</label>
+    <texturePath>Floors/FloralA/Olive</texturePath>
+    <uiIconPath>Icons/FloralA/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralA">
+    <defName>JFGeometricFloors_GildedCarpet_FloralA_Cream</defName>
+    <label>Gilded floral carpet A (cream)</label>
+    <texturePath>Floors/FloralA/Cream</texturePath>
+    <uiIconPath>Icons/FloralA/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_FloralB" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_FloralB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_VanillaA</defName>
+    <label>Gilded floral carpet B (vanilla A)</label>
+    <texturePath>Floors/FloralB/VanillaA</texturePath>
+    <uiIconPath>Icons/FloralB/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_VanillaB</defName>
+    <label>Gilded floral carpet B (vanilla B)</label>
+    <texturePath>Floors/FloralB/VanillaB</texturePath>
+    <uiIconPath>Icons/FloralB/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_VanillaC</defName>
+    <label>Gilded floral carpet B (vanilla C)</label>
+    <texturePath>Floors/FloralB/VanillaC</texturePath>
+    <uiIconPath>Icons/FloralB/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_VanillaD</defName>
+    <label>Gilded floral carpet B (vanilla D)</label>
+    <texturePath>Floors/FloralB/VanillaD</texturePath>
+    <uiIconPath>Icons/FloralB/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Red</defName>
+    <label>Gilded floral carpet B (red)</label>
+    <texturePath>Floors/FloralB/Red</texturePath>
+    <uiIconPath>Icons/FloralB/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Scarlet</defName>
+    <label>Gilded floral carpet B (scarlet)</label>
+    <texturePath>Floors/FloralB/Scarlet</texturePath>
+    <uiIconPath>Icons/FloralB/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Burgundy</defName>
+    <label>Gilded floral carpet B (burgundy)</label>
+    <texturePath>Floors/FloralB/Burgundy</texturePath>
+    <uiIconPath>Icons/FloralB/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Magenta</defName>
+    <label>Gilded floral carpet B (magenta)</label>
+    <texturePath>Floors/FloralB/Magenta</texturePath>
+    <uiIconPath>Icons/FloralB/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Purple</defName>
+    <label>Gilded floral carpet B (purple)</label>
+    <texturePath>Floors/FloralB/Purple</texturePath>
+    <uiIconPath>Icons/FloralB/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Indigo</defName>
+    <label>Gilded floral carpet B (indigo)</label>
+    <texturePath>Floors/FloralB/Indigo</texturePath>
+    <uiIconPath>Icons/FloralB/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Blue</defName>
+    <label>Gilded floral carpet B (blue)</label>
+    <texturePath>Floors/FloralB/Blue</texturePath>
+    <uiIconPath>Icons/FloralB/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Teal</defName>
+    <label>Gilded floral carpet B (teal)</label>
+    <texturePath>Floors/FloralB/Teal</texturePath>
+    <uiIconPath>Icons/FloralB/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Green</defName>
+    <label>Gilded floral carpet B (green)</label>
+    <texturePath>Floors/FloralB/Green</texturePath>
+    <uiIconPath>Icons/FloralB/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Olive</defName>
+    <label>Gilded floral carpet B (olive)</label>
+    <texturePath>Floors/FloralB/Olive</texturePath>
+    <uiIconPath>Icons/FloralB/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_FloralB">
+    <defName>JFGeometricFloors_GildedCarpet_FloralB_Cream</defName>
+    <label>Gilded floral carpet B (cream)</label>
+    <texturePath>Floors/FloralB/Cream</texturePath>
+    <uiIconPath>Icons/FloralB/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_Hexagon" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_Hexagon</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_VanillaA</defName>
+    <label>Gilded hexagon carpet (vanilla A)</label>
+    <texturePath>Floors/Hexagon/VanillaA</texturePath>
+    <uiIconPath>Icons/Hexagon/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_VanillaB</defName>
+    <label>Gilded hexagon carpet (vanilla B)</label>
+    <texturePath>Floors/Hexagon/VanillaB</texturePath>
+    <uiIconPath>Icons/Hexagon/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_VanillaC</defName>
+    <label>Gilded hexagon carpet (vanilla C)</label>
+    <texturePath>Floors/Hexagon/VanillaC</texturePath>
+    <uiIconPath>Icons/Hexagon/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_VanillaD</defName>
+    <label>Gilded hexagon carpet (vanilla D)</label>
+    <texturePath>Floors/Hexagon/VanillaD</texturePath>
+    <uiIconPath>Icons/Hexagon/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Red</defName>
+    <label>Gilded hexagon carpet (red)</label>
+    <texturePath>Floors/Hexagon/Red</texturePath>
+    <uiIconPath>Icons/Hexagon/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Scarlet</defName>
+    <label>Gilded hexagon carpet (scarlet)</label>
+    <texturePath>Floors/Hexagon/Scarlet</texturePath>
+    <uiIconPath>Icons/Hexagon/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Burgundy</defName>
+    <label>Gilded hexagon carpet (burgundy)</label>
+    <texturePath>Floors/Hexagon/Burgundy</texturePath>
+    <uiIconPath>Icons/Hexagon/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Magenta</defName>
+    <label>Gilded hexagon carpet (magenta)</label>
+    <texturePath>Floors/Hexagon/Magenta</texturePath>
+    <uiIconPath>Icons/Hexagon/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Purple</defName>
+    <label>Gilded hexagon carpet (purple)</label>
+    <texturePath>Floors/Hexagon/Purple</texturePath>
+    <uiIconPath>Icons/Hexagon/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Indigo</defName>
+    <label>Gilded hexagon carpet (indigo)</label>
+    <texturePath>Floors/Hexagon/Indigo</texturePath>
+    <uiIconPath>Icons/Hexagon/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Blue</defName>
+    <label>Gilded hexagon carpet (blue)</label>
+    <texturePath>Floors/Hexagon/Blue</texturePath>
+    <uiIconPath>Icons/Hexagon/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Teal</defName>
+    <label>Gilded hexagon carpet (teal)</label>
+    <texturePath>Floors/Hexagon/Teal</texturePath>
+    <uiIconPath>Icons/Hexagon/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Green</defName>
+    <label>Gilded hexagon carpet (green)</label>
+    <texturePath>Floors/Hexagon/Green</texturePath>
+    <uiIconPath>Icons/Hexagon/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Olive</defName>
+    <label>Gilded hexagon carpet (olive)</label>
+    <texturePath>Floors/Hexagon/Olive</texturePath>
+    <uiIconPath>Icons/Hexagon/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Hexagon">
+    <defName>JFGeometricFloors_GildedCarpet_Hexagon_Cream</defName>
+    <label>Gilded hexagon carpet (cream)</label>
+    <texturePath>Floors/Hexagon/Cream</texturePath>
+    <uiIconPath>Icons/Hexagon/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_Mosaic" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_Mosaic</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_VanillaA</defName>
+    <label>Gilded mosaic carpet (vanilla A)</label>
+    <texturePath>Floors/Mosaic/VanillaA</texturePath>
+    <uiIconPath>Icons/Mosaic/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_VanillaB</defName>
+    <label>Gilded mosaic carpet (vanilla B)</label>
+    <texturePath>Floors/Mosaic/VanillaB</texturePath>
+    <uiIconPath>Icons/Mosaic/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_VanillaC</defName>
+    <label>Gilded mosaic carpet (vanilla C)</label>
+    <texturePath>Floors/Mosaic/VanillaC</texturePath>
+    <uiIconPath>Icons/Mosaic/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_VanillaD</defName>
+    <label>Gilded mosaic carpet (vanilla D)</label>
+    <texturePath>Floors/Mosaic/VanillaD</texturePath>
+    <uiIconPath>Icons/Mosaic/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Red</defName>
+    <label>Gilded mosaic carpet (red)</label>
+    <texturePath>Floors/Mosaic/Red</texturePath>
+    <uiIconPath>Icons/Mosaic/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Scarlet</defName>
+    <label>Gilded mosaic carpet (scarlet)</label>
+    <texturePath>Floors/Mosaic/Scarlet</texturePath>
+    <uiIconPath>Icons/Mosaic/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Burgundy</defName>
+    <label>Gilded mosaic carpet (burgundy)</label>
+    <texturePath>Floors/Mosaic/Burgundy</texturePath>
+    <uiIconPath>Icons/Mosaic/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Magenta</defName>
+    <label>Gilded mosaic carpet (magenta)</label>
+    <texturePath>Floors/Mosaic/Magenta</texturePath>
+    <uiIconPath>Icons/Mosaic/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Purple</defName>
+    <label>Gilded mosaic carpet (purple)</label>
+    <texturePath>Floors/Mosaic/Purple</texturePath>
+    <uiIconPath>Icons/Mosaic/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Indigo</defName>
+    <label>Gilded mosaic carpet (indigo)</label>
+    <texturePath>Floors/Mosaic/Indigo</texturePath>
+    <uiIconPath>Icons/Mosaic/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Blue</defName>
+    <label>Gilded mosaic carpet (blue)</label>
+    <texturePath>Floors/Mosaic/Blue</texturePath>
+    <uiIconPath>Icons/Mosaic/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Teal</defName>
+    <label>Gilded mosaic carpet (teal)</label>
+    <texturePath>Floors/Mosaic/Teal</texturePath>
+    <uiIconPath>Icons/Mosaic/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Green</defName>
+    <label>Gilded mosaic carpet (green)</label>
+    <texturePath>Floors/Mosaic/Green</texturePath>
+    <uiIconPath>Icons/Mosaic/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Olive</defName>
+    <label>Gilded mosaic carpet (olive)</label>
+    <texturePath>Floors/Mosaic/Olive</texturePath>
+    <uiIconPath>Icons/Mosaic/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_Mosaic">
+    <defName>JFGeometricFloors_GildedCarpet_Mosaic_Cream</defName>
+    <label>Gilded mosaic carpet (cream)</label>
+    <texturePath>Floors/Mosaic/Cream</texturePath>
+    <uiIconPath>Icons/Mosaic/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_CircuitA" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_CircuitA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_VanillaA</defName>
+    <label>Gilded circuit carpet A (vanilla A)</label>
+    <texturePath>Floors/CircuitA/VanillaA</texturePath>
+    <uiIconPath>Icons/CircuitA/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_VanillaB</defName>
+    <label>Gilded circuit carpet A (vanilla B)</label>
+    <texturePath>Floors/CircuitA/VanillaB</texturePath>
+    <uiIconPath>Icons/CircuitA/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_VanillaC</defName>
+    <label>Gilded circuit carpet A (vanilla C)</label>
+    <texturePath>Floors/CircuitA/VanillaC</texturePath>
+    <uiIconPath>Icons/CircuitA/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_VanillaD</defName>
+    <label>Gilded circuit carpet A (vanilla D)</label>
+    <texturePath>Floors/CircuitA/VanillaD</texturePath>
+    <uiIconPath>Icons/CircuitA/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Red</defName>
+    <label>Gilded circuit carpet A (red)</label>
+    <texturePath>Floors/CircuitA/Red</texturePath>
+    <uiIconPath>Icons/CircuitA/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Scarlet</defName>
+    <label>Gilded circuit carpet A (scarlet)</label>
+    <texturePath>Floors/CircuitA/Scarlet</texturePath>
+    <uiIconPath>Icons/CircuitA/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Burgundy</defName>
+    <label>Gilded circuit carpet A (burgundy)</label>
+    <texturePath>Floors/CircuitA/Burgundy</texturePath>
+    <uiIconPath>Icons/CircuitA/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Magenta</defName>
+    <label>Gilded circuit carpet A (magenta)</label>
+    <texturePath>Floors/CircuitA/Magenta</texturePath>
+    <uiIconPath>Icons/CircuitA/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Purple</defName>
+    <label>Gilded circuit carpet A (purple)</label>
+    <texturePath>Floors/CircuitA/Purple</texturePath>
+    <uiIconPath>Icons/CircuitA/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Indigo</defName>
+    <label>Gilded circuit carpet A (indigo)</label>
+    <texturePath>Floors/CircuitA/Indigo</texturePath>
+    <uiIconPath>Icons/CircuitA/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Blue</defName>
+    <label>Gilded circuit carpet A (blue)</label>
+    <texturePath>Floors/CircuitA/Blue</texturePath>
+    <uiIconPath>Icons/CircuitA/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Teal</defName>
+    <label>Gilded circuit carpet A (teal)</label>
+    <texturePath>Floors/CircuitA/Teal</texturePath>
+    <uiIconPath>Icons/CircuitA/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Green</defName>
+    <label>Gilded circuit carpet A (green)</label>
+    <texturePath>Floors/CircuitA/Green</texturePath>
+    <uiIconPath>Icons/CircuitA/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Olive</defName>
+    <label>Gilded circuit carpet A (olive)</label>
+    <texturePath>Floors/CircuitA/Olive</texturePath>
+    <uiIconPath>Icons/CircuitA/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitA">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitA_Cream</defName>
+    <label>Gilded circuit carpet A (cream)</label>
+    <texturePath>Floors/CircuitA/Cream</texturePath>
+    <uiIconPath>Icons/CircuitA/Cream</uiIconPath>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedCarpet_CircuitB" ParentName="JFGeometricFloors_GildedCarpet" Abstract="True">
+    <designatorDropdown>Floor_CircuitB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_VanillaA</defName>
+    <label>Gilded circuit carpet B (vanilla A)</label>
+    <texturePath>Floors/CircuitB/VanillaA</texturePath>
+    <uiIconPath>Icons/CircuitB/VanillaA</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_VanillaB</defName>
+    <label>Gilded circuit carpet B (vanilla B)</label>
+    <texturePath>Floors/CircuitB/VanillaB</texturePath>
+    <uiIconPath>Icons/CircuitB/VanillaB</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_VanillaC</defName>
+    <label>Gilded circuit carpet B (vanilla C)</label>
+    <texturePath>Floors/CircuitB/VanillaC</texturePath>
+    <uiIconPath>Icons/CircuitB/VanillaC</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_VanillaD</defName>
+    <label>Gilded circuit carpet B (vanilla D)</label>
+    <texturePath>Floors/CircuitB/VanillaD</texturePath>
+    <uiIconPath>Icons/CircuitB/VanillaD</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Red</defName>
+    <label>Gilded circuit carpet B (red)</label>
+    <texturePath>Floors/CircuitB/Red</texturePath>
+    <uiIconPath>Icons/CircuitB/Red</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Scarlet</defName>
+    <label>Gilded circuit carpet B (scarlet)</label>
+    <texturePath>Floors/CircuitB/Scarlet</texturePath>
+    <uiIconPath>Icons/CircuitB/Scarlet</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Burgundy</defName>
+    <label>Gilded circuit carpet B (burgundy)</label>
+    <texturePath>Floors/CircuitB/Burgundy</texturePath>
+    <uiIconPath>Icons/CircuitB/Burgundy</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Magenta</defName>
+    <label>Gilded circuit carpet B (magenta)</label>
+    <texturePath>Floors/CircuitB/Magenta</texturePath>
+    <uiIconPath>Icons/CircuitB/Magenta</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Purple</defName>
+    <label>Gilded circuit carpet B (purple)</label>
+    <texturePath>Floors/CircuitB/Purple</texturePath>
+    <uiIconPath>Icons/CircuitB/Purple</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Indigo</defName>
+    <label>Gilded circuit carpet B (indigo)</label>
+    <texturePath>Floors/CircuitB/Indigo</texturePath>
+    <uiIconPath>Icons/CircuitB/Indigo</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Blue</defName>
+    <label>Gilded circuit carpet B (blue)</label>
+    <texturePath>Floors/CircuitB/Blue</texturePath>
+    <uiIconPath>Icons/CircuitB/Blue</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Teal</defName>
+    <label>Gilded circuit carpet B (teal)</label>
+    <texturePath>Floors/CircuitB/Teal</texturePath>
+    <uiIconPath>Icons/CircuitB/Teal</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Green</defName>
+    <label>Gilded circuit carpet B (green)</label>
+    <texturePath>Floors/CircuitB/Green</texturePath>
+    <uiIconPath>Icons/CircuitB/Green</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Olive</defName>
+    <label>Gilded circuit carpet B (olive)</label>
+    <texturePath>Floors/CircuitB/Olive</texturePath>
+    <uiIconPath>Icons/CircuitB/Olive</uiIconPath>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedCarpet_CircuitB">
+    <defName>JFGeometricFloors_GildedCarpet_CircuitB_Cream</defName>
+    <label>Gilded circuit carpet B (cream)</label>
+    <texturePath>Floors/CircuitB/Cream</texturePath>
+    <uiIconPath>Icons/CircuitB/Cream</uiIconPath>
+  </TerrainDef>
+  
+</Defs>

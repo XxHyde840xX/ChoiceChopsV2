@@ -1,0 +1,1272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Type ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone" Abstract="True">
+    <description>Gilded stone tile with complex patterns. A perfect choice for satisfying your ego, or perhaps vanity.</description>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+      <li>FineFloor</li>
+    </tags>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>2000</WorkToBuild>
+      <CleaningTimeFactor>0.8</CleaningTimeFactor>
+    </statBases>
+    <fertility>0</fertility>
+    <designationCategory>Floors</designationCategory>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <constructEffect>ConstructDirt</constructEffect>
+    <researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.8)</pollutionColor>
+    <pollutionOverlayScale>(0.75, 0.75)</pollutionOverlayScale>
+    <pollutionTintColor>(0.95, 0.95, 0.93, 1)</pollutionTintColor>
+    <renderPrecedence>200</renderPrecedence>
+    <uiOrder>2116</uiOrder>
+  </TerrainDef>
+
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_StarInSquare" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_StarInSquare</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Jade</defName>
+    <label>Gilded star-in-square tile (jade)</label>
+    <texturePath>Floors/StarInSquare/Jade</texturePath>
+    <uiIconPath>Icons/StarInSquare/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Sandstone</defName>
+    <label>Gilded star-in-square tile (sandstone)</label>
+    <texturePath>Floors/StarInSquare/Sandstone</texturePath>
+    <uiIconPath>Icons/StarInSquare/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Granite</defName>
+    <label>Gilded star-in-square tile (granite)</label>
+    <texturePath>Floors/StarInSquare/Granite</texturePath>
+    <uiIconPath>Icons/StarInSquare/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Limestone</defName>
+    <label>Gilded star-in-square tile (limestone)</label>
+    <texturePath>Floors/StarInSquare/Limestone</texturePath>
+    <uiIconPath>Icons/StarInSquare/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Slate</defName>
+    <label>Gilded star-in-square tile (slate)</label>
+    <texturePath>Floors/StarInSquare/Slate</texturePath>
+    <uiIconPath>Icons/StarInSquare/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInSquare">
+    <defName>JFGeometricFloors_GildedStone_StarInSquare_Marble</defName>
+    <label>Gilded star-in-square tile (marble)</label>
+    <texturePath>Floors/StarInSquare/Marble</texturePath>
+    <uiIconPath>Icons/StarInSquare/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+ 
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_StarInCircle" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_StarInCircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Jade</defName>
+    <label>Gilded star-in-circle tile (jade)</label>
+    <texturePath>Floors/StarInCircle/Jade</texturePath>
+    <uiIconPath>Icons/StarInCircle/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Sandstone</defName>
+    <label>Gilded star-in-circle tile (sandstone)</label>
+    <texturePath>Floors/StarInCircle/Sandstone</texturePath>
+    <uiIconPath>Icons/StarInCircle/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Granite</defName>
+    <label>Gilded star-in-circle tile (granite)</label>
+    <texturePath>Floors/StarInCircle/Granite</texturePath>
+    <uiIconPath>Icons/StarInCircle/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Limestone</defName>
+    <label>Gilded star-in-circle tile (limestone)</label>
+    <texturePath>Floors/StarInCircle/Limestone</texturePath>
+    <uiIconPath>Icons/StarInCircle/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Slate</defName>
+    <label>Gilded star-in-circle tile (slate)</label>
+    <texturePath>Floors/StarInCircle/Slate</texturePath>
+    <uiIconPath>Icons/StarInCircle/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_StarInCircle">
+    <defName>JFGeometricFloors_GildedStone_StarInCircle_Marble</defName>
+    <label>Gilded star-in-circle tile (marble)</label>
+    <texturePath>Floors/StarInCircle/Marble</texturePath>
+    <uiIconPath>Icons/StarInCircle/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_RibbonAndStar" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_RibbonAndStar</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Jade</defName>
+    <label>Gilded ribbon-and-star tile (jade)</label>
+    <texturePath>Floors/RibbonAndStar/Jade</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Sandstone</defName>
+    <label>Gilded ribbon-and-star tile (sandstone)</label>
+    <texturePath>Floors/RibbonAndStar/Sandstone</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Granite</defName>
+    <label>Gilded ribbon-and-star tile (granite)</label>
+    <texturePath>Floors/RibbonAndStar/Granite</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Limestone</defName>
+    <label>Gilded ribbon-and-star tile (limestone)</label>
+    <texturePath>Floors/RibbonAndStar/Limestone</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Slate</defName>
+    <label>Gilded ribbon-and-star tile (slate)</label>
+    <texturePath>Floors/RibbonAndStar/Slate</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_RibbonAndStar">
+    <defName>JFGeometricFloors_GildedStone_RibbonAndStar_Marble</defName>
+    <label>Gilded ribbon-and-star tile (marble)</label>
+    <texturePath>Floors/RibbonAndStar/Marble</texturePath>
+    <uiIconPath>Icons/RibbonAndStar/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_PeacockFeather" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_PeacockFeather</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Jade</defName>
+    <label>Gilded peacock feather tile (jade)</label>
+    <texturePath>Floors/PeacockFeather/Jade</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Sandstone</defName>
+    <label>Gilded peacock feather tile (sandstone)</label>
+    <texturePath>Floors/PeacockFeather/Sandstone</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Granite</defName>
+    <label>Gilded peacock feather tile (granite)</label>
+    <texturePath>Floors/PeacockFeather/Granite</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Limestone</defName>
+    <label>Gilded peacock feather tile (limestone)</label>
+    <texturePath>Floors/PeacockFeather/Limestone</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Slate</defName>
+    <label>Gilded peacock feather tile (slate)</label>
+    <texturePath>Floors/PeacockFeather/Slate</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_PeacockFeather">
+    <defName>JFGeometricFloors_GildedStone_PeacockFeather_Marble</defName>
+    <label>Gilded peacock feather tile (marble)</label>
+    <texturePath>Floors/PeacockFeather/Marble</texturePath>
+    <uiIconPath>Icons/PeacockFeather/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_Squircle" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_Squircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Jade</defName>
+    <label>Gilded squircle tile (jade)</label>
+    <texturePath>Floors/Squircle/Jade</texturePath>
+    <uiIconPath>Icons/Squircle/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Sandstone</defName>
+    <label>Gilded squircle tile (sandstone)</label>
+    <texturePath>Floors/Squircle/Sandstone</texturePath>
+    <uiIconPath>Icons/Squircle/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Granite</defName>
+    <label>Gilded squircle tile (granite)</label>
+    <texturePath>Floors/Squircle/Granite</texturePath>
+    <uiIconPath>Icons/Squircle/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Limestone</defName>
+    <label>Gilded squircle tile (limestone)</label>
+    <texturePath>Floors/Squircle/Limestone</texturePath>
+    <uiIconPath>Icons/Squircle/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Slate</defName>
+    <label>Gilded squircle tile (slate)</label>
+    <texturePath>Floors/Squircle/Slate</texturePath>
+    <uiIconPath>Icons/Squircle/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Squircle">
+    <defName>JFGeometricFloors_GildedStone_Squircle_Marble</defName>
+    <label>Gilded squircle tile (marble)</label>
+    <texturePath>Floors/Squircle/Marble</texturePath>
+    <uiIconPath>Icons/Squircle/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FlowerInCircle" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FlowerInCircle</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Jade</defName>
+    <label>Gilded flower-in-circle tile (jade)</label>
+    <texturePath>Floors/FlowerInCircle/Jade</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Sandstone</defName>
+    <label>Gilded flower-in-circle tile (sandstone)</label>
+    <texturePath>Floors/FlowerInCircle/Sandstone</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Granite</defName>
+    <label>Gilded flower-in-circle tile (granite)</label>
+    <texturePath>Floors/FlowerInCircle/Granite</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Limestone</defName>
+    <label>Gilded flower-in-circle tile (limestone)</label>
+    <texturePath>Floors/FlowerInCircle/Limestone</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Slate</defName>
+    <label>Gilded flower-in-circle tile (slate)</label>
+    <texturePath>Floors/FlowerInCircle/Slate</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FlowerInCircle">
+    <defName>JFGeometricFloors_GildedStone_FlowerInCircle_Marble</defName>
+    <label>Gilded flower-in-circle tile (marble)</label>
+    <texturePath>Floors/FlowerInCircle/Marble</texturePath>
+    <uiIconPath>Icons/FlowerInCircle/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FishScaleA" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FishScaleA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Jade</defName>
+    <label>Gilded fish scale tile A (jade)</label>
+    <texturePath>Floors/FishScaleA/Jade</texturePath>
+    <uiIconPath>Icons/FishScaleA/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Sandstone</defName>
+    <label>Gilded fish scale tile A (sandstone)</label>
+    <texturePath>Floors/FishScaleA/Sandstone</texturePath>
+    <uiIconPath>Icons/FishScaleA/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Granite</defName>
+    <label>Gilded fish scale tile A (granite)</label>
+    <texturePath>Floors/FishScaleA/Granite</texturePath>
+    <uiIconPath>Icons/FishScaleA/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Limestone</defName>
+    <label>Gilded fish scale tile A (limestone)</label>
+    <texturePath>Floors/FishScaleA/Limestone</texturePath>
+    <uiIconPath>Icons/FishScaleA/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Slate</defName>
+    <label>Gilded fish scale tile A (slate)</label>
+    <texturePath>Floors/FishScaleA/Slate</texturePath>
+    <uiIconPath>Icons/FishScaleA/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleA">
+    <defName>JFGeometricFloors_GildedStone_FishScaleA_Marble</defName>
+    <label>Gilded fish scale tile A (marble)</label>
+    <texturePath>Floors/FishScaleA/Marble</texturePath>
+    <uiIconPath>Icons/FishScaleA/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FishScaleB" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FishScaleB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Jade</defName>
+    <label>Gilded fish scale tile B (jade)</label>
+    <texturePath>Floors/FishScaleB/Jade</texturePath>
+    <uiIconPath>Icons/FishScaleB/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Sandstone</defName>
+    <label>Gilded fish scale tile B (sandstone)</label>
+    <texturePath>Floors/FishScaleB/Sandstone</texturePath>
+    <uiIconPath>Icons/FishScaleB/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Granite</defName>
+    <label>Gilded fish scale tile B (granite)</label>
+    <texturePath>Floors/FishScaleB/Granite</texturePath>
+    <uiIconPath>Icons/FishScaleB/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Limestone</defName>
+    <label>Gilded fish scale tile B (limestone)</label>
+    <texturePath>Floors/FishScaleB/Limestone</texturePath>
+    <uiIconPath>Icons/FishScaleB/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Slate</defName>
+    <label>Gilded fish scale tile B (slate)</label>
+    <texturePath>Floors/FishScaleB/Slate</texturePath>
+    <uiIconPath>Icons/FishScaleB/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FishScaleB">
+    <defName>JFGeometricFloors_GildedStone_FishScaleB_Marble</defName>
+    <label>Gilded fish scale tile B (marble)</label>
+    <texturePath>Floors/FishScaleB/Marble</texturePath>
+    <uiIconPath>Icons/FishScaleB/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FleurDeLisA" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FleurDeLisA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Jade</defName>
+    <label>Gilded fleur-de-lis tile A (jade)</label>
+    <texturePath>Floors/FleurDeLisA/Jade</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Sandstone</defName>
+    <label>Gilded fleur-de-lis tile A (sandstone)</label>
+    <texturePath>Floors/FleurDeLisA/Sandstone</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Granite</defName>
+    <label>Gilded fleur-de-lis tile A (granite)</label>
+    <texturePath>Floors/FleurDeLisA/Granite</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Limestone</defName>
+    <label>Gilded fleur-de-lis tile A (limestone)</label>
+    <texturePath>Floors/FleurDeLisA/Limestone</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Slate</defName>
+    <label>Gilded fleur-de-lis tile A (slate)</label>
+    <texturePath>Floors/FleurDeLisA/Slate</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisA">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisA_Marble</defName>
+    <label>Gilded fleur-de-lis tile A (marble)</label>
+    <texturePath>Floors/FleurDeLisA/Marble</texturePath>
+    <uiIconPath>Icons/FleurDeLisA/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FleurDeLisB" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FleurDeLisB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Jade</defName>
+    <label>Gilded fleur-de-lis tile B (jade)</label>
+    <texturePath>Floors/FleurDeLisB/Jade</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Sandstone</defName>
+    <label>Gilded fleur-de-lis tile B (sandstone)</label>
+    <texturePath>Floors/FleurDeLisB/Sandstone</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Granite</defName>
+    <label>Gilded fleur-de-lis tile B (granite)</label>
+    <texturePath>Floors/FleurDeLisB/Granite</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Limestone</defName>
+    <label>Gilded fleur-de-lis tile B (limestone)</label>
+    <texturePath>Floors/FleurDeLisB/Limestone</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Slate</defName>
+    <label>Gilded fleur-de-lis tile B (slate)</label>
+    <texturePath>Floors/FleurDeLisB/Slate</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FleurDeLisB">
+    <defName>JFGeometricFloors_GildedStone_FleurDeLisB_Marble</defName>
+    <label>Gilded fleur-de-lis tile B (marble)</label>
+    <texturePath>Floors/FleurDeLisB/Marble</texturePath>
+    <uiIconPath>Icons/FleurDeLisB/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FloralA" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FloralA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Jade</defName>
+    <label>Gilded floral tile A (jade)</label>
+    <texturePath>Floors/FloralA/Jade</texturePath>
+    <uiIconPath>Icons/FloralA/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Sandstone</defName>
+    <label>Gilded floral tile A (sandstone)</label>
+    <texturePath>Floors/FloralA/Sandstone</texturePath>
+    <uiIconPath>Icons/FloralA/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Granite</defName>
+    <label>Gilded floral tile A (granite)</label>
+    <texturePath>Floors/FloralA/Granite</texturePath>
+    <uiIconPath>Icons/FloralA/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Limestone</defName>
+    <label>Gilded floral tile A (limestone)</label>
+    <texturePath>Floors/FloralA/Limestone</texturePath>
+    <uiIconPath>Icons/FloralA/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Slate</defName>
+    <label>Gilded floral tile A (slate)</label>
+    <texturePath>Floors/FloralA/Slate</texturePath>
+    <uiIconPath>Icons/FloralA/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralA">
+    <defName>JFGeometricFloors_GildedStone_FloralA_Marble</defName>
+    <label>Gilded floral tile A (marble)</label>
+    <texturePath>Floors/FloralA/Marble</texturePath>
+    <uiIconPath>Icons/FloralA/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_FloralB" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_FloralB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Jade</defName>
+    <label>Gilded floral tile B (jade)</label>
+    <texturePath>Floors/FloralB/Jade</texturePath>
+    <uiIconPath>Icons/FloralB/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Sandstone</defName>
+    <label>Gilded floral tile B (sandstone)</label>
+    <texturePath>Floors/FloralB/Sandstone</texturePath>
+    <uiIconPath>Icons/FloralB/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Granite</defName>
+    <label>Gilded floral tile B (granite)</label>
+    <texturePath>Floors/FloralB/Granite</texturePath>
+    <uiIconPath>Icons/FloralB/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Limestone</defName>
+    <label>Gilded floral tile B (limestone)</label>
+    <texturePath>Floors/FloralB/Limestone</texturePath>
+    <uiIconPath>Icons/FloralB/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Slate</defName>
+    <label>Gilded floral tile B (slate)</label>
+    <texturePath>Floors/FloralB/Slate</texturePath>
+    <uiIconPath>Icons/FloralB/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_FloralB">
+    <defName>JFGeometricFloors_GildedStone_FloralB_Marble</defName>
+    <label>Gilded floral tile B (marble)</label>
+    <texturePath>Floors/FloralB/Marble</texturePath>
+    <uiIconPath>Icons/FloralB/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_Hexagon" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_Hexagon</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Jade</defName>
+    <label>Gilded hexagon tile (jade)</label>
+    <texturePath>Floors/Hexagon/Jade</texturePath>
+    <uiIconPath>Icons/Hexagon/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Sandstone</defName>
+    <label>Gilded hexagon tile (sandstone)</label>
+    <texturePath>Floors/Hexagon/Sandstone</texturePath>
+    <uiIconPath>Icons/Hexagon/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Granite</defName>
+    <label>Gilded hexagon tile (granite)</label>
+    <texturePath>Floors/Hexagon/Granite</texturePath>
+    <uiIconPath>Icons/Hexagon/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Limestone</defName>
+    <label>Gilded hexagon tile (limestone)</label>
+    <texturePath>Floors/Hexagon/Limestone</texturePath>
+    <uiIconPath>Icons/Hexagon/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Slate</defName>
+    <label>Gilded hexagon tile (slate)</label>
+    <texturePath>Floors/Hexagon/Slate</texturePath>
+    <uiIconPath>Icons/Hexagon/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Hexagon">
+    <defName>JFGeometricFloors_GildedStone_Hexagon_Marble</defName>
+    <label>Gilded hexagon tile (marble)</label>
+    <texturePath>Floors/Hexagon/Marble</texturePath>
+    <uiIconPath>Icons/Hexagon/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_Mosaic" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_Mosaic</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Jade</defName>
+    <label>Gilded mosaic tile (jade)</label>
+    <texturePath>Floors/Mosaic/Jade</texturePath>
+    <uiIconPath>Icons/Mosaic/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Sandstone</defName>
+    <label>Gilded mosaic tile (sandstone)</label>
+    <texturePath>Floors/Mosaic/Sandstone</texturePath>
+    <uiIconPath>Icons/Mosaic/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Granite</defName>
+    <label>Gilded mosaic tile (granite)</label>
+    <texturePath>Floors/Mosaic/Granite</texturePath>
+    <uiIconPath>Icons/Mosaic/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Limestone</defName>
+    <label>Gilded mosaic tile (limestone)</label>
+    <texturePath>Floors/Mosaic/Limestone</texturePath>
+    <uiIconPath>Icons/Mosaic/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Slate</defName>
+    <label>Gilded mosaic tile (slate)</label>
+    <texturePath>Floors/Mosaic/Slate</texturePath>
+    <uiIconPath>Icons/Mosaic/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_Mosaic">
+    <defName>JFGeometricFloors_GildedStone_Mosaic_Marble</defName>
+    <label>Gilded mosaic tile (marble)</label>
+    <texturePath>Floors/Mosaic/Marble</texturePath>
+    <uiIconPath>Icons/Mosaic/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_CircuitA" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_CircuitA</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Jade</defName>
+    <label>Gilded circuit tile A (jade)</label>
+    <texturePath>Floors/CircuitA/Jade</texturePath>
+    <uiIconPath>Icons/CircuitA/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Sandstone</defName>
+    <label>Gilded circuit tile A (sandstone)</label>
+    <texturePath>Floors/CircuitA/Sandstone</texturePath>
+    <uiIconPath>Icons/CircuitA/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Granite</defName>
+    <label>Gilded circuit tile A (granite)</label>
+    <texturePath>Floors/CircuitA/Granite</texturePath>
+    <uiIconPath>Icons/CircuitA/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Limestone</defName>
+    <label>Gilded circuit tile A (limestone)</label>
+    <texturePath>Floors/CircuitA/Limestone</texturePath>
+    <uiIconPath>Icons/CircuitA/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Slate</defName>
+    <label>Gilded circuit tile A (slate)</label>
+    <texturePath>Floors/CircuitA/Slate</texturePath>
+    <uiIconPath>Icons/CircuitA/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitA">
+    <defName>JFGeometricFloors_GildedStone_CircuitA_Marble</defName>
+    <label>Gilded circuit tile A (marble)</label>
+    <texturePath>Floors/CircuitA/Marble</texturePath>
+    <uiIconPath>Icons/CircuitA/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <TerrainDef Name="JFGeometricFloors_GildedStone_CircuitB" ParentName="JFGeometricFloors_GildedStone" Abstract="True">
+    <designatorDropdown>Floor_CircuitB</designatorDropdown>
+  </TerrainDef>
+  
+  <!-- ================= Third Subdivision: Color ================= -->
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Jade</defName>
+    <label>Gilded circuit tile B (jade)</label>
+    <texturePath>Floors/CircuitB/Jade</texturePath>
+    <uiIconPath>Icons/CircuitB/Jade</uiIconPath>
+    <costList>
+      <Jade>10</Jade>
+      <Gold>1</Gold>
+    </costList>
+    <statBases>
+      <Beauty>8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Sandstone</defName>
+    <label>Gilded circuit tile B (sandstone)</label>
+    <texturePath>Floors/CircuitB/Sandstone</texturePath>
+    <uiIconPath>Icons/CircuitB/Sandstone</uiIconPath>
+    <costList>
+      <BlocksSandstone>10</BlocksSandstone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Granite</defName>
+    <label>Gilded circuit tile B (granite)</label>
+    <texturePath>Floors/CircuitB/Granite</texturePath>
+    <uiIconPath>Icons/CircuitB/Granite</uiIconPath>
+    <costList>
+      <BlocksGranite>10</BlocksGranite>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Limestone</defName>
+    <label>Gilded circuit tile B (limestone)</label>
+    <texturePath>Floors/CircuitB/Limestone</texturePath>
+    <uiIconPath>Icons/CircuitB/Limestone</uiIconPath>
+    <costList>
+      <BlocksLimestone>10</BlocksLimestone>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Slate</defName>
+    <label>Gilded circuit tile B (slate)</label>
+    <texturePath>Floors/CircuitB/Slate</texturePath>
+    <uiIconPath>Icons/CircuitB/Slate</uiIconPath>
+    <costList>
+      <BlocksSlate>10</BlocksSlate>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="JFGeometricFloors_GildedStone_CircuitB">
+    <defName>JFGeometricFloors_GildedStone_CircuitB_Marble</defName>
+    <label>Gilded circuit tile B (marble)</label>
+    <texturePath>Floors/CircuitB/Marble</texturePath>
+    <uiIconPath>Icons/CircuitB/Marble</uiIconPath>
+    <costList>
+      <BlocksMarble>10</BlocksMarble>
+      <Gold>1</Gold>
+    </costList>
+  </TerrainDef>
+  
+</Defs>

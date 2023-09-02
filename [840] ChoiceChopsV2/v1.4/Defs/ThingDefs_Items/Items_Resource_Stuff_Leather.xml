@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="LeatherBase">
+    <defName>ColdwargLeather</defName>
+    <label>coldwarg leather</label>
+    <description>The thick leather of a coldwarg. It has great cold insulation but otherwise is not that tough.</description>
+    <graphicData>
+      <color>(146,158,171)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+	  <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>45</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(57,62,67)</color>
+      <commonality>0</commonality>
+	  <statFactors>
+        <Beauty>1.5</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+</Defs>

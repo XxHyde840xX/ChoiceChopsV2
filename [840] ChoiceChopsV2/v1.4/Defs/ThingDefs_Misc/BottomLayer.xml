@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================= First Subdivision: Base ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer" ParentName="BuildingBase">
+    <altitudeLayer>Floor</altitudeLayer>
+    <blockPlants>true</blockPlants>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <designationCategory>Floors</designationCategory>
+    <selectable>true</selectable>
+    <useHitPoints>true</useHitPoints>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <building>
+      <isEdifice>false</isEdifice>
+      <paintable>true</paintable>
+    </building>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <blocksAltitudes>
+      <li>Floor</li>
+    </blocksAltitudes>
+    <researchPrerequisites><li>CarpetMaking</li></researchPrerequisites>  
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <uiOrder>2117</uiOrder>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_CircleA" ParentName="JFBottomLayer">
+    <description>Circle bottom layer A.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/CircleA</texPath>
+      <color>(190, 184, 175)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/CircleA</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_CircleA">
+    <defName>JFBottomLayer_CircleA_Small</defName>
+    <label>Circle bottom layer A (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_CircleA">
+    <defName>JFBottomLayer_CircleA_Medium</defName>
+    <label>Circle bottom layer A (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_CircleA">
+    <defName>JFBottomLayer_CircleA_Large</defName>
+    <label>Circle bottom layer A (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_CircleB" ParentName="JFBottomLayer">
+    <description>Circle bottom layer B.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/CircleB</texPath>
+      <color>(190, 184, 175)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/CircleB</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_CircleB">
+    <defName>JFBottomLayer_CircleB_Small</defName>
+    <label>Circle bottom layer B (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_CircleB">
+    <defName>JFBottomLayer_CircleB_Medium</defName>
+    <label>Circle bottom layer B (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_CircleB">
+    <defName>JFBottomLayer_CircleB_Large</defName>
+    <label>Circle bottom layer B (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_Grassland" ParentName="JFBottomLayer">
+    <description>Grassland bottom layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/Grassland</texPath>
+      <color>(121, 214, 240)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/Grassland</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_Grassland">
+    <defName>JFBottomLayer_Grassland_Small</defName>
+    <label>Grassland bottom layer (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Grassland">
+    <defName>JFBottomLayer_Grassland_Medium</defName>
+    <label>Grassland bottom layer (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Grassland">
+    <defName>JFBottomLayer_Grassland_Large</defName>
+    <label>Grassland bottom layer (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_Hexagon" ParentName="JFBottomLayer">
+    <description>Hexagon bottom layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/Hexagon</texPath>
+      <color>(190, 184, 175)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/Hexagon</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_Hexagon">
+    <defName>JFBottomLayer_Hexagon_Small</defName>
+    <label>Hexagon bottom layer (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Hexagon">
+    <defName>JFBottomLayer_Hexagon_Medium</defName>
+    <label>Hexagon bottom layer (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Hexagon">
+    <defName>JFBottomLayer_Hexagon_Large</defName>
+    <label>Hexagon bottom layer (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_Medical" ParentName="JFBottomLayer">
+    <description>Medical bottom layer.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/Medical</texPath>
+      <color>(178, 34, 52)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/Medical</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_Medical">
+    <defName>JFBottomLayer_Medical_Small</defName>
+    <label>Medical bottom layer (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Medical">
+    <defName>JFBottomLayer_Medical_Medium</defName>
+    <label>Medical bottom layer (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_Medical">
+    <defName>JFBottomLayer_Medical_Large</defName>
+    <label>Medical bottom layer (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_ShieldA" ParentName="JFBottomLayer">
+    <description>Shield bottom layer A.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/ShieldA</texPath>
+      <color>(31, 75, 179)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/ShieldA</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldA">
+    <defName>JFBottomLayer_ShieldA_Small</defName>
+    <label>Shield bottom layer A (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldA">
+    <defName>JFBottomLayer_ShieldA_Medium</defName>
+    <label>Shield bottom layer A (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldA">
+    <defName>JFBottomLayer_ShieldA_Large</defName>
+    <label>Shield bottom layer A (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <!-- ================= Second Subdivision: Pattern ================= -->
+
+  <ThingDef Abstract="True" Name="JFBottomLayer_ShieldB" ParentName="JFBottomLayer">
+    <description>Shield bottom layer B.</description>
+    <graphicData>
+      <texPath>FloorCoverings/BottomLayer/ShieldB</texPath>
+      <color>(31, 75, 179)</color>
+    </graphicData>
+    <uiIconPath>Icons/BottomLayer/ShieldB</uiIconPath>
+  </ThingDef>
+
+  <!-- ================= Third Subdivision: Size ================= -->
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldB">
+    <defName>JFBottomLayer_ShieldB_Small</defName>
+    <label>Shield bottom layer B (small)</label>
+    <designatorDropdown>BottomLayer_Small</designatorDropdown>
+    <size>(2,2)</size>
+    <uiIconScale>0.8</uiIconScale>
+    <graphicData>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>8</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>4</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>40</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldB">
+    <defName>JFBottomLayer_ShieldB_Medium</defName>
+    <label>Shield bottom layer B (medium)</label>
+    <designatorDropdown>BottomLayer_Medium</designatorDropdown>
+    <size>(3,3)</size>
+    <uiIconScale>0.95</uiIconScale>
+    <graphicData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>18</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>9</Beauty>
+      <WorkToBuild>900</WorkToBuild>
+      <Mass>90</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="JFBottomLayer_ShieldB">
+    <defName>JFBottomLayer_ShieldB_Large</defName>
+    <label>Shield bottom layer B (large)</label>
+    <designatorDropdown>BottomLayer_Large</designatorDropdown>
+    <size>(4,4)</size>
+    <uiIconScale>1.1</uiIconScale>
+    <graphicData>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>32</Cloth>
+    </costList>
+    <statBases>
+      <Beauty>16</Beauty>
+      <WorkToBuild>1600</WorkToBuild>
+      <Mass>160</Mass>
+    </statBases>
+  </ThingDef>
+  
+</Defs>
