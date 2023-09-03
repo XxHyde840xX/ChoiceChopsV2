@@ -15,7 +15,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="SoyMilk"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Retextures/SoyMilk</texPath>
+                        <texPath>Things/Items/Resources/SoyMilk</texPath>
                     </value>
                 </li>
             </operations>
