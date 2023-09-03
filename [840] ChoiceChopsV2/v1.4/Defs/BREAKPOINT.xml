@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!-- Wovles Mask -->
+
+  <ThingDef Name="Wovles_Helme" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<description>"The Wolves are a military criminal group of more refined Sentinel Corporation contractors and former special forces personnel that have taken over Skell Technology's new headquarters on Auroa."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>4000</WorkToMake>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Mass>.80</Mass>
+		<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+		<ArmorRating_Heat>75</ArmorRating_Heat>
+		<Insulation_Cold>5</Insulation_Cold>
+		<Insulation_Heat>3</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<SocialImpact>0.10</SocialImpact>
+		<ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
+		<ShootingAccuracyPawn>-0.05</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>45</Steel>
+		<Cloth>10</Cloth>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>FlakArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>Wolves</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="Wovles_Helme">
+	<defName>Wolves_MaskA_Apparel</defName>
+	<label>Wolves Mask A</label>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_MaskA_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Apparel/Wolves_MaskA</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="Wovles_Helme">
+	<defName>Wolves_MaskB_Apparel</defName>
+	<label>Wolves Mask B</label>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_MaskB_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Apparel/Wolves_MaskB</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="Wovles_Helme">
+	<defName>Wolves_MaskC_Apparel</defName>
+	<label>Wolves Mask C</label>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_MaskC_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Apparel/Wolves_MaskC</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="Wovles_Helme">
+	<defName>Wolves_MaskD_Apparel</defName>
+	<label>Wolves Mask D</label>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_MaskD_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Apparel/Wolves_MaskD</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="Wovles_Helme">
+	<defName>Wolves_MaskE_Apparel</defName>
+	<label>Wolves Mask E</label>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_MaskE_UI</texPath>
+    </graphicData>
+    <apparel>
+		<wornGraphicPath>Things/Apparel/Wolves_MaskE</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+
+		<!-- Wolves Apparel -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+		<defName>Wolves_Golem_Vest_Apparel</defName>
+		<label>Wolves Golem Vest</label>
+		<description>"The colors of the Wolves' uniforms and their masks are mostly green, black and different types of grey."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_Golem_Vest_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>280</MaxHitPoints>
+		<Mass>8.5</Mass>
+		<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.45</ArmorRating_Heat>
+		<Insulation_Cold>8</Insulation_Cold>
+		<Insulation_Heat>6</Insulation_Heat>
+		<EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<PainShockThreshold>0.15</PainShockThreshold>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>60</Steel>
+		<Cloth>30</Cloth>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>FlakArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wolves_Golem_Vest</wornGraphicPath>
+		<layers>
+			<li>Middle</li>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>Wolves</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+		<!-- Wolves RainCoat Apparel -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+		<defName>Wolves_Golem_Raincoat_Apparel</defName>
+		<label>Wolves Golem Raincoat</label>
+		<description>"The colors of the Wolves' uniforms and their masks are mostly green, black and different types of grey."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Wolves_Golem_Raincoat_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>180</MaxHitPoints>
+		<Mass>2.5</Mass>
+		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.45</ArmorRating_Heat>
+		<Insulation_Cold>11</Insulation_Cold>
+		<Insulation_Heat>11</Insulation_Heat>
+		<EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicEnvironmentResistance>0.40</ToxicEnvironmentResistance>	
+		<MoveSpeed>-0.05</MoveSpeed>
+		<SocialImpact>0.05</SocialImpact>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>10</Steel>
+		<Cloth>35</Cloth>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>FlakArmor</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Wolves_Golem_Raincoat</wornGraphicPath>
+		<layers>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>Wolves</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>
