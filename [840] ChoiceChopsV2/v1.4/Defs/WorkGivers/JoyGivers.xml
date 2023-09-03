@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+<JoyGiverDef>
+	<defName>840_Play_DamHaji</defName>
+	<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+	<baseChance>2</baseChance>
+	<thingDefs>
+		<li>840DamHaji</li>
+	</thingDefs>
+	<jobDef>840_Play_DamHaji</jobDef>
+	<joyKind>Gaming_Cerebral</joyKind>
+	<requiredCapacities>
+		<li>Manipulation</li>
+	</requiredCapacities>
+</JoyGiverDef>
+
+<JoyGiverDef>
+	<defName>840ShougiGame</defName>
+	<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+	<baseChance>2</baseChance>
+	<thingDefs>
+		<li>840_ShougiTable</li>
+	</thingDefs>
+	<jobDef>840_Play_Shougi</jobDef>
+	<joyKind>Gaming_Cerebral</joyKind>
+	<requiredCapacities>
+		<li>Manipulation</li>
+	</requiredCapacities>
+</JoyGiverDef>
+
+<JoyGiverDef>
+	<defName>840MahjongGame</defName>
+	<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+	<baseChance>4</baseChance>
+	<thingDefs>
+		<li>840_MahjongTable</li>
+	</thingDefs>
+	<jobDef>840_Play_Mahjong</jobDef>
+	<joyKind>Gaming_Cerebral</joyKind>
+	<requiredCapacities>
+		<li>Sight</li>
+		<li>Manipulation</li>
+	</requiredCapacities>
+</JoyGiverDef>
+
+</Defs>

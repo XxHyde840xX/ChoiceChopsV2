@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    	<!-- Raider Leather Jacket Kobra-->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_RLJK</defName>
+    <label>Raider Jacket Cobra</label>
+    <description>Your basic jacket modified with crude shoulderpads and spikes.</description>
+    <graphicData>
+      <texPath>Apparel/Kobra/RLJK</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  		<drawSize>1.0</drawSize>
+			<!--<drawOffsetNorth>(0,0.01,0)</drawOffsetNorth>
+			<drawOffsetEast>(0,0.01,0)</drawOffsetEast>
+			<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+			<drawOffsetWest>(0,0.01,0)</drawOffsetWest>-->
+    </graphicData>
+		<modExtensions>
+			<!--<li Class="OversizedApparel.Extension">
+				<drawSize>(1, 1)</drawSize>
+			</li>-->
+		</modExtensions>
+	<costList>
+		<Steel>15</Steel>
+	</costList>
+     <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <Mass>4</Mass>
+      <MaxHitPoints>280</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+	<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+	<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+    <EquipDelay>1.5</EquipDelay>
+	<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+    </statBases>
+    <equippedStatOffsets>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+	  <MoveSpeed>-0.06</MoveSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+    </equippedStatOffsets>
+	<generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Kobra/RLJK</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+      	<!-- Raider Leather Jacket Skull-->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_RLJS</defName>
+    <label>Raider Jacket Skull and Bones</label>
+    <description>Your basic jacket modified with crude shoulderpads and spikes.</description>
+    <graphicData>
+      <texPath>Apparel/Skull/RLJS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  		<drawSize>1.0</drawSize>
+			<!--<drawOffsetNorth>(0,0.01,0)</drawOffsetNorth>
+			<drawOffsetEast>(0,0.01,0)</drawOffsetEast>
+			<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+			<drawOffsetWest>(0,0.01,0)</drawOffsetWest>-->
+    </graphicData>
+		<modExtensions>
+			<!--<li Class="OversizedApparel.Extension">
+				<drawSize>(1, 1)</drawSize>
+			</li>-->
+		</modExtensions>
+	<costList>
+		<Steel>15</Steel>
+	</costList>
+     <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <Mass>4</Mass>
+      <MaxHitPoints>280</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+	<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+	<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+    <EquipDelay>1.5</EquipDelay>
+	<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+    </statBases>
+    <equippedStatOffsets>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+	  <MoveSpeed>-0.06</MoveSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+    </equippedStatOffsets>
+	<generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Skull/RLJS</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+  
+        	<!-- Raider Leather Jacket Tiger-->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_RLJT</defName>
+    <label>Raider Jacket Tiger</label>
+    <description>Your basic jacket modified with crude shoulderpads and spikes.</description>
+    <graphicData>
+      <texPath>Apparel/Tiger/RLJT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  		<drawSize>1.0</drawSize>
+			<!--<drawOffsetNorth>(0,0.01,0)</drawOffsetNorth>
+			<drawOffsetEast>(0,0.01,0)</drawOffsetEast>
+			<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+			<drawOffsetWest>(0,0.01,0)</drawOffsetWest>-->
+    </graphicData>
+		<modExtensions>
+			<!--<li Class="OversizedApparel.Extension">
+				<drawSize>(1, 1)</drawSize>
+			</li>-->
+		</modExtensions>
+	<costList>
+	 <Steel>15</Steel>
+	</costList>
+     <costStuffCount>55</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+	  <Mass>4</Mass>
+      <MaxHitPoints>280</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+	<StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+	<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+    <EquipDelay>1.5</EquipDelay>
+	<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+    </statBases>
+    <equippedStatOffsets>
+	  <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.3</SlaveSuppressionOffset>
+	  <MoveSpeed>-0.06</MoveSpeed>
+	  <PainShockThreshold>0.15</PainShockThreshold>
+    </equippedStatOffsets>
+	<generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Tiger/RLJT</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  
+  
+    <!--Raider Shoulderpads Armour-->
+  
+    <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_RSA</defName>
+    <label>Raider Shoulderpads</label>
+    <description>An old world football shoulderpads set that protect the wearer's shoulders and body, raiders like to add some spikey bits on the shoulders.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Apparel/Shoulder/RSA</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<!--<drawOffsetNorth>(0,0.01,0)</drawOffsetNorth>
+			<drawOffsetEast>(0,0.01,0)</drawOffsetEast>
+			<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+			<drawOffsetWest>(0,0.01,0)</drawOffsetWest>-->
+	</graphicData>
+			<modExtensions>
+				<!--<li Class="OversizedApparel.Extension">
+					<drawSize>(1, 1)</drawSize>
+				</li>-->
+			</modExtensions>
+    <costList>
+        <Leather_Patch>50</Leather_Patch>
+		<Steel>15</Steel>
+    </costList>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>4</Mass>
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+	  <ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+	  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+	  <Insulation_Cold>3</Insulation_Cold>
+	  <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>3.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Shoulder/RSA</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+     <!-- Plunderer Pants -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_PP</defName>
+    <label>Raider Plunderer Pants</label>
+    <description>A dummy text.</description>
+    <graphicData>
+      <texPath>Apparel/Plunderer/PP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+        <costList>
+            <Leather_Patch>25</Leather_Patch>
+        </costList>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.34</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.19</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.18</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+      <equippedStatOffsets>
+      <MoveSpeed>0.1</MoveSpeed>
+      <PainShockThreshold>0.05</PainShockThreshold>
+      </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Plunderer/PP</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+       <!-- Plunderer Bandolier -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_PB</defName>
+    <label>Raider Plunderer Bandolier</label>
+    <description>A dummy text.</description>
+    <graphicData>
+      <texPath>Apparel/Plunderer/PB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+        <costList>
+            <Leather_Patch>5</Leather_Patch>
+			<Steel>10</Steel>
+        </costList>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.02</ArmorRating_Heat>
+      <Insulation_Cold>1</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+      <equippedStatOffsets>
+	  <AimingDelayFactor>-0.10</AimingDelayFactor>
+      <PainShockThreshold>0.05</PainShockThreshold>
+      </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Plunderer/PB</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+         <!-- Plunderer Full Set -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MORG_PF</defName>
+    <label>Raider Plunderer Full Set</label>
+    <description>A dummy text.</description>
+    <graphicData>
+      <texPath>Apparel/Plunderer/PF</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+        <costList>
+            <Leather_Patch>30</Leather_Patch>
+			<Steel>10</Steel>
+        </costList>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.2</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>4.5</EquipDelay>
+    </statBases>
+      <equippedStatOffsets>
+	  <MoveSpeed>0.1</MoveSpeed>
+	  <AimingDelayFactor>-0.10</AimingDelayFactor>
+      <PainShockThreshold>0.1</PainShockThreshold>
+      </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Plunderer/PF</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+	  <li>postapo</li>
+      </tags>
+      <defaultOutfitTags>
+	  <li>postapo</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+</Defs>

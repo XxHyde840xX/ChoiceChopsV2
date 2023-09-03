@@ -11,6 +11,7 @@
 			- This is one of those "I'm trimming my list without trimming my list," inclusions. Sorry folks!
 			- I am not the original author of these and all credit goes to the original creators and artists who did the reskins.
 			- Obviously incompatible with the original versions, so if you see any of the below animals or skins in your list, yeet 'em!
+			- I've included some of these in the github release in separate folders in case you just want a couple choice reskins.
 				
 				- Milkrats / Tanuki / Rhodesian Ridgebacks / Pygmy Muffalo / Mamuffalo / Meat Pigs / Domestic Thrumbo / Coldwarg
 				- Beefeaters / Muffaloaves / Boomaphants / Insect Meat Reskin / Another Milk Retexture - Re-Bagged! (I hackjobbed this one!)
@@ -24,7 +25,7 @@
 				- The Chihuahua is cute as hell and has features listed below. The Machnorian Chicken produces eggs that refine into yayo.
 					
 					- Life Stages: Experience the growth of chihuahuas from adorable puppies to playful juveniles and chonky adults.
-					- Bonding: After forming bonds with your colonists, chihuahuas provide frequent comedic relief (+2 mental buff) and emotional support (+4 mental buff).
+					- Bonding: After forming bonds with your colonists, they provide frequent comedic relief (+2 mental buff) and emotional support (+4 mental buff).
 					- Healing Licks: Able to heal wounds of nearby colonists and animals.
 					- Piercing Bark: Chihuahuas now have a bark ability that can hurt enemies from a range (optional).
 					- Digging: Chihuahuas occasionally dig up a range of resources.
@@ -46,6 +47,22 @@
 			- A few cursed guns from TMC's Gatalog mod. Couldn't pass these up but the rest were kind of...meh. Gotta have some fun though.
 			- You get a competition Glock named Big Chungus, a .22LR bolt-action pistol (scoped of course), and a tactical "Space Cowboy" revolver.
 			- Not much else to say on this one but enjoy!
+			
+	- [My Current Mods on Steam]
+			- Nothing too crazy here, just a couple mods I have on steam. Figured they might as well be here so I can archive and cleam up my modlist more.
+			- You know you were gonna download them anyways. ;) Here's what's compiled:
+			
+				- Gokusotsu Shougi and Mahjong. Also includes some new snowman textures!
+				- An Otter Hat For Otters. Otterly amazing. Also can be made from otters. Otterly troubling...
+				- Malay-Style Eaves and Dam Haji.
+				
+	- [Morgante's Post Apocalyptic Pack and Morgante's Furs]
+			- Zaljerem was kind enough to provide me with an archive containing some incredible stuff. I wish I could include it all.
+			- What I've done with this one is cut out the makeshift weapons, leaving the sweet raider jackets intact.
+			- Also left in the gibbet-cage/streetlamp combo building because it was nifty.
+			- Morgante's Furs are also included since both reqired the same framework.
+			- By the way, you need Oversized Apparel Framework to use the mod now. Sorry, not sorry.
+			- I've included these in a separate folder in case you want just this pack standalone.
 
       =============================================================================================================================  
 	  
@@ -66,6 +83,12 @@
 		<li></li>
 	</incompatibleWith>
 	<modDependencies>
+		 <li>
+            <packageId>bs.oversizedapparel</packageId>
+            <displayName>Oversized Apparel Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2630800313</steamWorkshopUrl>
+            <downloadUrl>https://github.com/bbradson/Oversized-Apparel-Framework</downloadUrl>
+        </li>
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
@@ -103,5 +126,7 @@
         <li>sarg.rimbees</li>
         <li>sarg.alphaanimals</li>
 		<li>VFME.SimpleTofu</li>
+		<li>bs.oversizedapparel</li>
+		<li>zetrith.prepatcher</li>
 	</loadAfter>
 </ModMetaData>

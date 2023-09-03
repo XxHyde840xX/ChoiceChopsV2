@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!-- Wolf Fur --> 
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>apparel_MORGFURB</defName>
+    <description>A cloak made with a wolf Fur for blocking harsh winds and the bone chilling cold. Neolithic era tech, yet still highly effective.</description>
+    <label>Wolf Fur Cloak</label>	
+    <graphicData>
+      <texPath>Accessory/Wolf_Cloak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  	<drawSize>1.0</drawSize>
+		<drawOffsetNorth>(0,0.01,0)</drawOffsetNorth>
+		<drawOffsetEast>(0,0.01,0)</drawOffsetEast>
+		<drawOffsetSouth>(0,0,0)</drawOffsetSouth>
+		<drawOffsetWest>(0,0.01,0)</drawOffsetWest>
+    </graphicData>
+		<modExtensions>
+			<li Class="OversizedApparel.Extension">
+				<drawSize>(1, 1)</drawSize>
+			</li>
+		</modExtensions>
+	<techLevel>Neolithic</techLevel>
+	<tradeability>Sellable</tradeability>
+	<generateCommonality>0.3</generateCommonality>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+	<costStuffCount>100</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>  
+    </stuffCategories>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <WorkToMake>20000</WorkToMake>	  
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>	 
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+	  <Mass>2</Mass>	 
+	  <EquipDelay>1</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+		<li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+		<li>Shell</li>
+	  </layers>		  
+      <wornGraphicPath>Accessory/Wolf_Cloak</wornGraphicPath>	
+	  <tags>
+		<li>Neolithic</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>	  
+      <recipeUsers>
+		<li>CraftingSpot</li>		
+      </recipeUsers>
+    </recipeMaker>	
+  </ThingDef>
+
+
+</Defs>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>MORG_Gibbets_Structure</defName>
+    <label>Gibbets Structure</label>
+    <order>210</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <ThingDef Name="MORG_Gibbets" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_GibbetCage</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.25</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Rare</tickerType>
+    <size>(1,1)</size>
+    <designationCategory>MORG_Gibbets_Structure</designationCategory>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <rotatable>false</rotatable>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <gibbetCagePlaceCorpseEffecter>GibbetCage_PlaceCorpse</gibbetCagePlaceCorpseEffecter>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowCorpsesColonist</li>
+          </specialFiltersToDisallow>
+          <specialFiltersToAllow>
+            <li>AllowCorpsesStranger</li>
+          </specialFiltersToAllow>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <inspectorTabs>
+      <li>ITab_ContentsCasket</li>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    
+  </ThingDef>
+
+
+  <ThingDef ParentName="MORG_Gibbets">
+    <defName>MORG_GibbetSL_Right</defName>
+    <label>Street Lamp Gibbet Right</label>
+    <description>Raider Gibbet.</description>
+    <graphicData>
+      <texPath>Gibbets/SLGibbet_Bottom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Gibbets/Gibbet_Right</uiIconPath>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">0</TerrorSource>  
+      <Mass>175</Mass>
+    </statBases>
+    <building>
+      <gibbetCageTopGraphicData>
+        <texPath>Gibbets/Gibbet_Right</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+        <shaderType>CutoutComplex</shaderType>
+      </gibbetCageTopGraphicData>
+      <gibbetCorposeDrawOffset>(0, 0, 0)</gibbetCorposeDrawOffset>
+    </building>
+    <costList>
+      <Steel>75</Steel>
+    </costList>
+		    <comps>
+		<li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+	    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MORG_Gibbets">
+    <defName>MORG_GibbetSL_Left</defName>
+    <label>Street Lamp Gibbet Left</label>
+    <description>Raider Gibbet.</description>
+    <graphicData>
+      <texPath>Gibbets/SLGibbet_Bottom</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Gibbets/Gibbet_Left</uiIconPath>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">0</TerrorSource>  
+      <Mass>175</Mass>
+    </statBases>
+    <building>
+      <gibbetCageTopGraphicData>
+        <texPath>Gibbets/Gibbet_Left</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+        <shaderType>CutoutComplex</shaderType>
+      </gibbetCageTopGraphicData>
+      <gibbetCorposeDrawOffset>(0, 0, 0)</gibbetCorposeDrawOffset>
+    </building>
+    <costList>
+      <Steel>75</Steel>
+    </costList>
+	    <comps>
+		<li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+	    </comps>
+  </ThingDef>
+
+</Defs>
