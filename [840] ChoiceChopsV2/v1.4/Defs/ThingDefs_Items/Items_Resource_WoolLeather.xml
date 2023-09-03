@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+    <!-- ======================= Tuffalo =============================== -->
+
+<ThingDef ParentName="WoolBase">
+    <defName>TuffaloWool</defName>
+    <label>tuffalo wool</label>
+    <description>Akin to the Muffalo, Tuffalo wool provides exceptional insulation against the cold. Suitable to maintain body heat in the coldest of conditions.</description>
+    <graphicData>
+		<color>(153,117,73)</color>
+    </graphicData>	
+	<statBases>
+		<MarketValue>3.1</MarketValue>
+		  <StuffPower_Armor_Sharp>0.96</StuffPower_Armor_Sharp>
+		  <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+		  <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+    </statBases>	
+    <stuffProps>
+		<color>(153,117,73)</color>
+	  <commonality>0.02</commonality>
+	  <statFactors>
+      
+        <Beauty>1.55</Beauty>
+      </statFactors>
+	</stuffProps>
+</ThingDef>
+
+
+
+  
+
+</Defs>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================= Tuffalo =============================== -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Tuffalo</defName>
+		<label>tuffalo</label>
+		<description>A natural genetic mutation in the Muffalo, generating a larger tawny variation from its predecessor. Tuffalo are relatively rare and tend to favour cold biomes. Whilst aggressive in the wild, when tamed, the Tuffalo is feircly loyal and serves as a powerful pack animal for caravans. Along with its heightened aggression, the Tuffalo's mutation also allowed it to maintain the ability to produce milk.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<MarketValue>500</MarketValue>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<FilthRate>20</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>17</milkAmount>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>TuffaloWool</woolDef>
+				<shearIntervalDays>25</shearIntervalDays>
+				<woolAmount>150</woolAmount>
+			</li>
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>3.0</baseBodySize>
+			<baseHealthScale>3.5</baseHealthScale>
+			<baseHungerRate>0.8</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<wildness>0.65</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<trainability>None</trainability>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>45</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<wildBiomes>
+				<BorealForest>0.3</BorealForest> 
+				<TemperateForest>0.1</TemperateForest>
+				<Tundra>0.1</Tundra>
+				<ColdBog>0.07</ColdBog>
+				<IceSheet>0.02</IceSheet>
+			</wildBiomes>
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>AnimalFarm</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>Tuffalo</defName>
+		<label>tuffalo</label>
+		<labelPlural>tuffalo</labelPlural>
+		<race>Tuffalo</race>
+		<combatPower>200</combatPower>
+		<ecoSystemWeight>1.2</ecoSystemWeight>
+		<wildGroupSize>
+			<min>1</min>
+			<max>2</max>
+		</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>tuffalo calf</label>
+				<labelPlural>tuffalo calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Tuffalo</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Dessicated_Tuffalo</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Tuffalo</texPath>
+					<drawSize>2.25</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Dessicated_Tuffalo</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Tuffalo</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Tuffalo/Dessicated_Tuffalo</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
