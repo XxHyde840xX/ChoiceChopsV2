@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!-- Heavy Helmet -->
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Bot_Soldier_Helmet</defName>
+		<label>Heavy Trooper Helmet</label>
+		<description>"The Heavy Trooper is a soldier pumped up with propaganda and psychotropic drugs, sealed in a suit of bulletproof and blast-resistant armor."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Bot_Soldier_Helmet_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>4000</WorkToMake>
+		<MaxHitPoints>124</MaxHitPoints>
+		<Mass>3</Mass>
+		<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+		<ArmorRating_Heat>75</ArmorRating_Heat>
+		<Insulation_Cold>8</Insulation_Cold>
+		<Insulation_Heat>8</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+		<ShootingAccuracyPawn>0.50</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>70</Steel>
+		<Cloth>5</Cloth>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Bot_Soldier_Helmet</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>FROG</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+		<!-- Heavy Apparel -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+		<defName>Bot_Soldier_Armor</defName>
+		<label>Heavy Trooper Armor</label>
+		<description>"Heavies possess a lust for battle that surpasses most Helghast troops; they are often seen taunting and threatening their foes in the thick of battle, while slowly advancing upon them and disregarding incoming fire."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/Bot_Soldier_Armor_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>280</MaxHitPoints>
+		<Mass>11.5</Mass>
+		<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.50</ArmorRating_Heat>
+		<Insulation_Cold>15</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+		<EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+		<MoveSpeed>-0.20</MoveSpeed>
+		<PainShockThreshold>0.15</PainShockThreshold>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>65</Steel>
+		<Cloth>5</Cloth>
+		<ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Bot_Soldier_Armor</wornGraphicPath>
+		<layers>
+			<li>Middle</li>
+			<li>Shell</li>
+		</layers>
+		<tags>
+			<li>FROG</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>StA25_SMG</defName>
+    <label>StA25 Vlug</label>
+    <description>"The StA-25 features a bullpup design and a unique 30-round helical motorized drum magazine reminiscent in Stahl Arms weaponry."</description>
+    <graphicData>
+      <texPath>Things/Apparel/Gun2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.3</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+        </recipeUsers>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.20</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_StA25_SMG</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>22.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_StA25_SMG</defName>
+    <label>StA25 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+ <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>StA-3_HMG</defName>
+    <label>StA-3 Light Machine Gun</label>
+    <description>"Powerful and effective at all ranges. Fitted with a green dot sight for enhanced target acquisition."</description>
+    <graphicData>
+      <texPath>Things/Apparel/Gun1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.6</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>TableMachining</li>
+        </recipeUsers>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>8.5</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.60</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_StA_HMG</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>25.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_StA_HMG</defName>
+    <label>StA-3 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>48</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

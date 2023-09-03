@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<!-- FROG Helmet -->
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>FROG_Helmet</defName>
+		<label>FROG Helmet</label>
+		<description>The Haven Troopers, also known as FROGS or Frog Soldiers, were an army of elite, female soldiers equipped with powered suits that operated under Liquid Ocelot's direct command."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/FROG_Helm_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>4000</WorkToMake>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Mass>.80</Mass>
+		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+		<ArmorRating_Heat>75</ArmorRating_Heat>
+		<Insulation_Cold>8</Insulation_Cold>
+		<Insulation_Heat>8</Insulation_Heat>
+		<EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+		<ImmunityGainSpeed>+0.15</ImmunityGainSpeed>
+		<ShootingAccuracyPawn>0.50</ShootingAccuracyPawn>
+		<HuntingStealth>0.50</HuntingStealth>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>70</Steel>
+		<Cloth>5</Cloth>
+		<ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>FullHead</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/FROG_Helm</wornGraphicPath>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>FROG</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+	<thingCategories Inherit="False">
+		<li>Headgear</li>
+	</thingCategories>
+  </ThingDef>
+
+		<!-- Frog Apparel -->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+		<defName>FROG_Suit</defName>
+		<label>FROG Body Suit</label>
+		<description>The Haven Troopers' characteristic heightened jumping ability and use of a catapult to launch themselves into the atmosphere and effect a dynamic entry earned them their nickname of "FROGS."</description>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+	<graphicData>
+      <texPath>Things/Apparel/FROG_Suit_UI</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<WorkToMake>10000</WorkToMake>
+		<MaxHitPoints>280</MaxHitPoints>
+		<Mass>8.5</Mass>
+		<ArmorRating_Sharp>0.99</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.50</ArmorRating_Heat>
+		<Insulation_Cold>15</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
+		<EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>	
+		<MoveSpeed>0.30</MoveSpeed>
+		<PainShockThreshold>0.15</PainShockThreshold>
+		<SocialImpact>0.05</SocialImpact>
+		<HuntingStealth>0.30</HuntingStealth>
+	</equippedStatOffsets>
+    <costList>
+		<Steel>5</Steel>
+		<Cloth>30</Cloth>
+		<ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<researchPrerequisite>Fabrication</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <apparel>
+		<bodyPartGroups>
+			<li>Neck</li>
+			<li>Torso</li>
+			<li>Shoulders</li>
+			<li>Waist</li>
+			<li>Arms</li>
+			<li>Legs</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/FROG_Suit</wornGraphicPath>
+		<layers>
+			<li>Middle</li>
+			<li>OnSkin</li>
+		</layers>
+		<tags>
+			<li>FROG</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+		</defaultOutfitTags>
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+	</apparel>
+	<thingCategories Inherit="False">
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+</Defs>
