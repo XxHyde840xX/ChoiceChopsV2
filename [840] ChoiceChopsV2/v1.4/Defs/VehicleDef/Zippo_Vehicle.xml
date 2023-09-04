@@ -391,6 +391,10 @@
 				<health>250</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
+				<armor>
+					<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+				</armor>	
 				<hitbox>
 					<side>Back</side>
 				</hitbox>
