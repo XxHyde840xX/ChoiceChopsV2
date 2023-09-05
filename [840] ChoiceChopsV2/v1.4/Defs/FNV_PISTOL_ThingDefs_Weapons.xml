@@ -368,19 +368,5 @@
       </li>
     </tools>
   </ThingDef>
-  
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_22mm</defName>
-    <label>.22 bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>9</damageAmountBase>
-      <speed>45</speed>
-    </projectile>
-  </ThingDef>
 
 </Defs>
