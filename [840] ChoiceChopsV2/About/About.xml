@@ -33,7 +33,7 @@
 	- [Geometric Floors, More Floor Coverings, and Royal Carpets by JF]
 			- Love the mods, hate the vRAM usage on startup. Seriously, everything needed downscaling. Even the icons.
 			- 1024x1024 MAXIMUM for floor textures people. Seriously. Icons are down to 128x128 because they were nice.
-			- There were around 800-900 textures resized, and it's only around 100-ish MB or so now.
+			- There were around 800-900 textures resized, nothing over 512x512 now because the vRAM hit was not negligible.
 			- Don't want the decor? Deal with it. It's here, and I'm not downscaling it again if my files reset for some reason.
 			- The carpets were honestly fine, but they're here too.
 			
@@ -70,12 +70,14 @@
 			- Was real excited to have another ship, but I don't use Aerocraft Framework so I spun this out from the original mod.
 			- All credit goes to Zyszhao on this one, I just yoinked the boat from their "Into The Fire" Vehicle Pack mod.
 			- 2 Drivers / 10 Passengers / 15,000Kg of cargo capacity / ARMED TO THE TEETH! / Enjoy!
+			- Bonus points for fuelling it with Ferret's Nutrichem System! (Grab it on Steam! I did the textures!)
 	
 	- [The Woodchuck - A Wood-Powered Pickup Truck]
 			- Another one of my translations, both made standalone, and as a Steam translation add-on, now included here, just for you!
 			- This one's a bit interesting, one of the first "alternatively-fueled" vehicles no less. Powered by the mighty wood log.
 			- Again, I had to clean up the textures a bit to remove the transparent crap left behind by the author, but I got you covered.
 			- I love doing these quick translations. It's like 4 lines of text. I'll have more to include so long as the author keeps 'em coming.
+			- Bonus points for grabbing Alexis Popcorn's Wooden Pipe Network off of steam and using it to help fuel this silly thing!
 			
 	- [Jango Unchained]
 			- Jango, Jango, Jango. Jango D'Soul. What am I gonna do with you homie? PLEASE STOP USING COMPOVERSIZED AND OTHER UNPERFORMANT .DLL FILES!
@@ -90,12 +92,50 @@
 	
 	- [The Gunrunners' "Special Reserve" Collection]
 			- Ever wanted so many Fallout: New Vegas guns you couldn't possibly ever use them all? Me either, so we're back to the chopping block today.
-			- All I've done is curated some of the sweetest, most memorable firearms from Ranger Rick's "Fallout Collaboration Project" New Vegas Packs.
+			- All I've done is curated some of the sweetest, most memorable firearms from Ranger Rick's "Fallout Collaboration Project" New Vegas packs.
 			- FNV was a blast and remains one of my favorite games. I am pleased to provide the following fine armaments on behalf of the Gunrunners.
 			
-				- HERE WE GO!
+				From the FNV Heavy Weapons Collection
+					- CZ57 Avenger Minigun / K9000 Cyberdog Gun (FIDO) / Shoulder Mounted Machine Gun				
 
-      =============================================================================================================================  
+				From the FNV Sniper Rifles Collection
+					- Gobi Campaign Rifle / CoS Silenced Sniper Rifle / Anti-Material Rifle
+					
+				From the FNV Submachine Guns Collection
+					- Silenced .22 SMG / 12.5mm Submachine Gun / "Sleepy Time" 10mm SMG
+					
+				From the FNV Shotguns Collection
+					- Dinner Bell / Lever Action Shotgun / Riot Shotgun
+					
+				From the FNV Revolvers Collection
+					- .357 Magnum "Lucky" / Mysterious Magnum / 556 Pistol
+					
+				From the FNV Pistols Collection
+					- 9mm Pistol / 22mm Silenced Pistol / A Light Shining in The Darkness / Maria / .45 Auto Pistol
+					
+				From the FNV Lever Action Rifles Collection
+					- Abilene Kid BB Gun / La Longue Carabine / Medicine Stick / Brush Gun
+					
+				From the FNV Assault Rifles Collection
+				
+					- Bozar / All-American / Automatic Rifle
+					
+				There is no Fat-Man. Raiders have more than enough BS to throw at us without adding the Fat-Man.
+				
+	- [Another Milk Retexture - Re-Bagged!]
+			- Honestly, I nearly forgot about this one, but there are milk retextures for everything. So. Many. Milk. Retextures.
+			- I mashed up two milk retexture mods to include a very Canadian easter-egg. You'll know it when you see it.
+			- I apologize for nothing. Open buckets of milk are gross. Thanks MallowYellow and flo.vall for making milk awesome again.
+
+      =============================================================================================================================
+
+	This marks the end of this particular modpack. I've definitely learned alot with this one, everything from fixing authors overwriting
+	their own defs in some cases, to proper folder nesting, to downscaling textures en-masse to save on the vRAM hit during startup. I 
+	apologize for the large file size on this one, I include .dds textures with all of my stuff so feel free to delete them if you don't
+	need them. All in all, I think I did a fairly solid job mashing this all together, and I'm definitely confident in both cracking out
+	another version of Choice Chops, as well as some awesome original content in the near future. Until then, stay safe, enjoy the content,
+	and make sure not to give those pesky raiders an inch. Or just sit back and run a farm with the umpteen-million animals I've included. I
+	won't judge. :)
 	  
 	XxHyde840xX - o7
 	  
