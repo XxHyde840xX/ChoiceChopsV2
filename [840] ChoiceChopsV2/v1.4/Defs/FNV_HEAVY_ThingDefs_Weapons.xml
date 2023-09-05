@@ -68,7 +68,6 @@
     </tools>
   </ThingDef>
   
-  </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Bullet_5mm</defName>
     <label>5mm Bullet</label>
