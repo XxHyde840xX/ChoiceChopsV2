@@ -33,7 +33,7 @@
 	- [Geometric Floors, More Floor Coverings, and Royal Carpets by JF]
 			- Love the mods, hate the vRAM usage on startup. Seriously, everything needed downscaling. Even the icons.
 			- 1024x1024 MAXIMUM for floor textures people. Seriously. Icons are down to 128x128 because they were nice.
-			- There were around 800-900 textures resized, nothing over 512x512 now because the vRAM hit was not negligible.
+			- There were around 800-900 textures resized, floors had to stay at 1024 though due to quality issues.
 			- Don't want the decor? Deal with it. It's here, and I'm not downscaling it again if my files reset for some reason.
 			- The carpets were honestly fine, but they're here too.
 			
